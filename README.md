@@ -1,2 +1,2 @@
 # player
-player js
+player.js
