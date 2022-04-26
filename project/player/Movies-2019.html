@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>RealTv</title>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1 user-scalable=no" />
+		
+		<link rel="stylesheet" type="text/css"  href="content/global.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+		
+		<script type="text/javascript" src="java/FWDUVPlayer.js"></script>
+		
+		<!-- Setup video player-->
+		<script type="text/javascript">
+			FWDUVPUtils.onReady(function(){
+				
+				new FWDUVPlayer({	
+					
+					//main settings
+					
+					instanceName:"player1",
+					parentId:"myDiv",
+					playlistsId:"playlists",
+					mainFolderPath:"content",
+					skinPath:"classic_skin_dark",
+					displayType:"responsive",
+					initializeOnlyWhenVisible:"no",
+					useVectorIcons:"no",
+					fillEntireVideoScreen:"no",
+					fillEntireposterScreen:"yes",
+					goFullScreenOnButtonPlay:"no",
+					playsinline:"yes",
+					privateVideoPassword:"428c841430ea18a70f7b06525d4b748a",
+					youtubeAPIKey:"",
+					useHEXColorsForSkin:"no",
+					normalHEXButtonsColor:"#666666",
+					googleAnalyticsTrackingCode:"",
+					useResumeOnPlay:"no",
+					useDeepLinking:"yes",
+					showPreloader:"yes",
+					preloaderBackgroundColor:"#000000",
+					preloaderFillColor:"#FFFFFF",
+					addKeyboardSupport:"yes",
+					autoScale:"yes",
+					showButtonsToolTip:"yes", 
+					stopVideoWhenPlayComplete:"no",
+					playAfterVideoStop:"no",
+					autoPlay:"no",
+					autoPlayText:"Click To Unmute",
+					loop:"no",
+					shuffle:"no",
+					showErrorInfo:"yes",
+					maxWidth:980,
+					maxHeight:552,
+					volume:.8,
+					rewindTime:10,
+					buttonsToolTipHideDelay:1.5,
+					backgroundColor:"#000000",
+					videoBackgroundColor:"#000000",
+					posterBackgroundColor:"#000000",
+					buttonsToolTipFontColor:"#5a5a5a",
+					
+					//logo settings
+					
+					showLogo:"yes",
+					logoPath:"",
+					hideLogoWithController:"yes",
+					logoPosition:"topRight",
+					logoLink:"http://www.webdesign-flash.ro/",
+					logoPath:"",
+					logoMargins:10,
+					
+					//playlists/categories settings
+					
+					showPlaylistsSearchInput:"yes",
+					usePlaylistsSelectBox:"yes",
+					showPlaylistsButtonAndPlaylists:"yes",
+					showPlaylistsByDefault:"no",
+					thumbnailSelectedType:"opacity",
+					startAtPlaylist:0,
+					buttonsMargins:15,
+					thumbnailMaxWidth:350, 
+					thumbnailMaxHeight:350,
+					horizontalSpaceBetweenThumbnails:40,
+					verticalSpaceBetweenThumbnails:40,
+					inputBackgroundColor:"#333333",
+					inputColor:"#999999",
+					
+					//playlist settings
+					
+					showPlaylistButtonAndPlaylist:"yes",					<!-- Tombol Playlist -->
+					playlistPosition:"right",
+					showPlaylistByDefault:"yes",
+					showPlaylistName:"yes",
+					showSearchInput:"yes",
+					showLoopButton:"yes",
+					showShuffleButton:"yes",
+					showPlaylistOnFullScreen:"no",
+					showNextAndPrevButtons:"yes",
+					showThumbnail:"yes",
+					showOnlyThumbnail:"no",
+					forceDisableDownloadButtonForFolder:"yes",
+					addMouseWheelSupport:"yes", 
+					startAtRandomVideo:"no",
+					stopAfterLastVideoHasPlayed:"no",
+					addScrollOnMouseMove:"no",
+					randomizePlaylist:'no',
+					folderVideoLabel:"VIDEO ",
+					playlistRightWidth:310,
+					playlistBottomHeight:380,
+					startAtVideo:0,
+					maxPlaylistItems:1000,									<!-- Jumlah Playlist -->
+					thumbnailWidth:71,
+					thumbnailHeight:71,
+					spaceBetweenControllerAndPlaylist:1,
+					spaceBetweenThumbnails:1,
+					scrollbarOffestWidth:10,
+					scollbarSpeedSensitivity:.5,
+					playlistBackgroundColor:"#000000",
+					playlistNameColor:"#FFFFFF",
+					thumbnailNormalBackgroundColor:"#1b1b1b",
+					thumbnailHoverBackgroundColor:"#313131",
+					thumbnailDisabledBackgroundColor:"#272727",
+					searchInputBackgroundColor:"#000000",
+					searchInputColor:"#bdbdbd",
+					youtubeAndFolderVideoTitleColor:"#FFFFFF",
+					folderAudioSecondTitleColor:"#999999",
+					youtubeOwnerColor:"#bdbdbd",
+					youtubeDescriptionColor:"#bdbdbd",
+					mainSelectorBackgroundSelectedColor:"#FFFFFF",
+					mainSelectorTextNormalColor:"#FFFFFF",
+					mainSelectorTextSelectedColor:"#000000",
+					mainButtonBackgroundNormalColor:"#212021",
+					mainButtonBackgroundSelectedColor:"#FFFFFF",
+					mainButtonTextNormalColor:"#FFFFFF",
+					mainButtonTextSelectedColor:"#000000",
+					
+					//controller settings
+					
+					showController:"yes",					<!-- Tampilan Pengaturan -->
+					showControllerWhenVideoIsStopped:"yes",
+					showNextAndPrevButtonsInController:"no",
+					showRewindButton:"no",					<!-- Playback -->					
+					showPlaybackRateButton:"yes",
+					showVolumeButton:"yes",
+					showTime:"yes",
+					showQualityButton:"yes",
+					showInfoButton:"yes",					<!-- Info -->
+					showDownloadButton:"no",				<!-- Download -->
+					showShareButton:"no",					<!-- Bagikan -->
+					showEmbedButton:"yes",					<!-- Iframe -->
+					showChromecastButton:"no",
+					showFullScreenButton:"yes",
+					disableVideoScrubber:"no",
+					showScrubberWhenControllerIsHidden:"yes",
+					showMainScrubberToolTipLabel:"yes",
+					showDefaultControllerForVimeo:"yes",
+					repeatBackground:"no",
+					controllerHeight:42,
+					controllerHideDelay:3,
+					startSpaceBetweenButtons:10,
+					spaceBetweenButtons:10,
+					scrubbersOffsetWidth:2,
+					mainScrubberOffestTop:16,
+					timeOffsetLeftWidth:2,
+					timeOffsetRightWidth:3,
+					timeOffsetTop:0,
+					volumeScrubberHeight:80,
+					volumeScrubberOfsetHeight:12,
+					timeColor:"#bdbdbd",
+					youtubeQualityButtonNormalColor:"#bdbdbd",
+					youtubeQualityButtonSelectedColor:"#FFFFFF",
+					scrubbersToolTipLabelBackgroundColor:"#FFFFFF",
+					scrubbersToolTipLabelFontColor:"#5a5a5a",
+					
+					//advertisement on pause window
+					
+					aopwTitle:"Advertisement",
+					aopwWidth:400,
+					aopwHeight:240,
+					aopwBorderSize:6,
+					aopwTitleColor:"#FFFFFF",
+					
+					//subtitle
+					
+					subtitlesOffLabel:"Subtitle off",
+					//popup add windows
+					showPopupAdsCloseButton:"yes",
+					
+					//embed window and info window
+					
+					embedAndInfoWindowCloseButtonMargins:15,
+					borderColor:"#333333",
+					mainLabelsColor:"#FFFFFF",
+					secondaryLabelsColor:"#bdbdbd",
+					shareAndEmbedTextColor:"#5a5a5a",
+					inputBackgroundColor:"#000000",
+					inputColor:"#FFFFFF",
+					
+					//login
+					
+		            playIfLoggedIn:"no",
+		            playIfLoggedInMessage:"Please <a href='https://google.com' target='_blank'>login</a> to play this video.",
+					
+					//audio visualizer
+					
+					audioVisualizerLinesColor:"#0099FF",
+					audioVisualizerCircleColor:"#FFFFFF",
+					
+					//lightbox settings
+					
+					closeLightBoxWhenPlayComplete:"no",
+					lightBoxBackgroundOpacity:.6,
+					lightBoxBackgroundColor:"#000000",
+					
+					//sticky on scroll
+					
+					stickyOnScroll:"no",
+					stickyOnScrollShowOpener:"yes",
+					stickyOnScrollWidth:"700",
+					stickyOnScrollHeight:"394",
+					
+					//sticky display settings
+					
+					showOpener:"yes",
+					showOpenerPlayPauseButton:"yes",
+					verticalPosition:"bottom",
+					horizontalPosition:"center",
+					showPlayerByDefault:"yes",
+					animatePlayer:"yes",
+					openerAlignment:"right",
+					mainBackgroundImagePath:"content/minimal_skin_dark/main-background.png",
+					openerEqulizerOffsetTop:-1,
+					openerEqulizerOffsetLeft:3,
+					offsetX:0,
+					offsetY:0,
+					
+					//playback rate / speed
+					
+					defaultPlaybackRate:1, //0.25, 0.5, 1, 1.25, 1.2, 2
+					
+					//cuepoints
+					
+					executeCuepointsOnlyOnce:"no",
+					
+					//annotations
+					
+					showAnnotationsPositionTool:"no",
+					
+					//ads
+					
+					openNewPageAtTheEndOfTheAds:"no",
+					adsButtonsPosition:"left",
+					skipToVideoText:"You can skip to video in: ",
+					skipToVideoButtonText:"Skip Ad",
+					adsTextNormalColor:"#bdbdbd",
+					adsTextSelectedColor:"#FFFFFF",
+					adsBorderNormalColor:"#444444",
+					adsBorderSelectedColor:"#FFFFFF",
+					
+					//a to b loop
+					
+					useAToB:"yes",
+					atbTimeBackgroundColor:"transparent",
+					atbTimeTextColorNormal:"#888888",
+					atbTimeTextColorSelected:"#FFFFFF",
+					atbButtonTextNormalColor:"#888888",
+					atbButtonTextSelectedColor:"#FFFFFF",
+					atbButtonBackgroundNormalColor:"#FFFFFF",
+					atbButtonBackgroundSelectedColor:"#000000",
+					
+					//thumbnails preview
+					
+					thumbnailsPreviewWidth:196,
+					thumbnailsPreviewHeight:110,
+					thumbnailsPreviewBackgroundColor:"#000000",
+					thumbnailsPreviewBorderColor:"#666",
+					thumbnailsPreviewLabelBackgroundColor:"#666",
+					thumbnailsPreviewLabelFontColor:"#FFF",
+					
+					// context menu
+					
+					showContextmenu:'no',					<!-- Klik kanan -->
+					showScriptDeveloper:"no",
+					contextMenuBackgroundColor:"#1f1f1f",
+					contextMenuBorderColor:"#1f1f1f",
+					contextMenuSpacerColor:"#333",
+					contextMenuItemNormalColor:"#666666",
+					contextMenuItemSelectedColor:"#FFFFFF",
+					contextMenuItemDisabledColor:"#333"
+				});
+			});
+			
+		</script>
+		
+	</head>
+
+	<body style="background-color:#999999">	
+	
+		<div id="myDiv" style="position:relative; left:0px; top:0px;"></div>
+		
+		<!--  Playlists -->
+			<ul id="playlists" style="display:none;">
+				<li data-source="playlist1" data-playlist-name="MY RealTv" data-thumbnail-path="content/thumbnails/p-html.jpg">
+					<p class="fwduvp-categories-title"><span class="fwduvp-header">Title: </span><span class="fwduvp-title">My HTML playlist</span></p>
+					<p class="fwduvp-categories-type"><span class="fwduvp-header">Type: </span>HTML</p>
+					<p class="fwduvp-categories-description"><span class="fwduvp-header">Description: </span>Created using <strong>HTML markup</strong>, all format are supported and it can have mixed video formats.</p>
+				</li>
+			</ul>
+			
+
+			<!-- Playlist MY RealTv -->
+			<ul id="playlist1" style="display:none;">
+
+<!----  Ivan  --------------------------------------------------------------------------------->
+<!----  Movies 2019  --------------------------------------------------------------------------------->
+				<!----  3 from Hell (2019) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/3 from hell/3fromhell-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/3 from hell/videos/3fromhell-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/3 from hell/videos/3fromhell-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/3 from hell/videos/3fromhell-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/3 from hell/videos/3fromhell-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/3 from hell/3fromhell-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/3 from hell/3fromhell.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">3 from Hell (2019)</p>
+							<p class="fwduvp-thumbnail-description">3 from Hell (2019) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  6 Underground (2019) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/6 underground/6underground-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/6 underground/videos/6underground-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/6 underground/videos/6underground-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/6 underground/videos/6underground-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/6 underground/videos/6underground-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/6 underground/6underground-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/6 underground/6underground.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">6 Underground (2019)</p>
+							<p class="fwduvp-thumbnail-description">6 Underground (2019) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  21 Bridges 2019 --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/21 bridges/21bridges-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/21 bridges/videos/21bridges-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/21 bridges/videos/21bridges-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/21 bridges/videos/21bridges-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/21 bridges/videos/21bridges-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/21 bridges/21bridges-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/21 bridges/21bridges.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">21 Bridges 2019</p>
+							<p class="fwduvp-thumbnail-description">21 Bridges 2019 computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  47 Meters Down Uncaged 2019 --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/47 meters down uncaged/47metersdownuncaged-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/47 meters down uncaged/videos/47metersdownuncaged-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/47 meters down uncaged/videos/47metersdownuncaged-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/47 meters down uncaged/videos/47metersdownuncaged-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/47 meters down uncaged/videos/47metersdownuncaged-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/47 meters down uncaged/47metersdownuncaged-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/47 meters down uncaged/47metersdownuncaged.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">47 Meters Down Uncaged 2019</p>
+							<p class="fwduvp-thumbnail-description">47 Meters Down Uncaged 2019 computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  A Beautiful Day in the Neighborhood (2019) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/a beatiful day in the neighborhood/abeautifuldayintheneighborhood-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/a beatiful day in the neighborhood/videos/abeautifuldayintheneighborhood-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/a beatiful day in the neighborhood/videos/abeautifuldayintheneighborhood-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/a beatiful day in the neighborhood/videos/abeautifuldayintheneighborhood-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/a beatiful day in the neighborhood/videos/abeautifuldayintheneighborhood-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/a beatiful day in the neighborhood/abeautifuldayintheneighborhood-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/a beatiful day in the neighborhood/abeautifuldayintheneighborhood.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">A Beautiful Day in the Neighborhood (2019)</p>
+							<p class="fwduvp-thumbnail-description">A Beautiful Day in the Neighborhood (2019) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  A Dog's Journey (2019) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/a dogs journey/adogsjourney-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/a dogs journey/videos/adogsjourney-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/a dogs journey/videos/adogsjourney-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/a dogs journey/videos/adogsjourney-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/a dogs journey/videos/adogsjourney-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/a dogs journey/adogsjourney-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/a dogs journey/adogsjourney.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">A Dog's Journey (2019)</p>
+							<p class="fwduvp-thumbnail-description">A Dog's Journey (2019) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  A Dog's Way Home 2019 --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/a dogs way home/adogswayhome-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/a dogs way home/videos/adogswayhome-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/a dogs way home/videos/adogswayhome-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/a dogs way home/videos/adogswayhome-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/a dogs way home/videos/adogswayhome-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/a dogs way home/adogswayhome-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/a dogs way home/adogswayhome.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">A Dog's Way Home 2019</p>
+							<p class="fwduvp-thumbnail-description">A Dog's Way Home 2019 computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  A Rainy Day in New York (2019) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/a rainy day in new york/arainydayinnewyork-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/a rainy day in new york/videos/arainydayinnewyork-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/a rainy day in new york/videos/arainydayinnewyork-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/a rainy day in new york/videos/arainydayinnewyork-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/a rainy day in new york/videos/arainydayinnewyork-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/a rainy day in new york/arainydayinnewyork-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/a rainy day in new york/arainydayinnewyork.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">A Rainy Day in New York (2019)</p>
+							<p class="fwduvp-thumbnail-description">A Rainy Day in New York (2019) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  A Shaun the Sheep Movie Farmageddon (2019) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/a shaun the sheep movie farmageddon/ashaunthesheepmoviefarmageddon-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/a shaun the sheep movie farmageddon/videos/ashaunthesheepmoviefarmageddon-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/a shaun the sheep movie farmageddon/videos/ashaunthesheepmoviefarmageddon-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/a shaun the sheep movie farmageddon/videos/ashaunthesheepmoviefarmageddon-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/a shaun the sheep movie farmageddon/videos/ashaunthesheepmoviefarmageddon-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/a shaun the sheep movie farmageddon/ashaunthesheepmoviefarmageddon-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/a shaun the sheep movie farmageddon/ashaunthesheepmoviefarmageddon.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">A Shaun the Sheep Movie Farmageddon (2019)</p>
+							<p class="fwduvp-thumbnail-description">A Shaun the Sheep Movie Farmageddon (2019) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Aadai (2019) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/aadai/aadai-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/aadai/videos/aadai-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/aadai/videos/aadai-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/aadai/videos/aadai-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/aadai/videos/aadai-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/aadai/aadai-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/aadai/aadai.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Aadai (2019)</p>
+							<p class="fwduvp-thumbnail-description">Aadai (2019) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Acceleration (2019) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/acceleration/acceleration-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/acceleration/videos/acceleration-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/acceleration/videos/acceleration-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/acceleration/videos/acceleration-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/acceleration/videos/acceleration-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/acceleration/acceleration-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/acceleration/acceleration.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Acceleration (2019)</p>
+							<p class="fwduvp-thumbnail-description">Acceleration (2019) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Adopt a Highway (2019) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/adopt a highway/adoptahighway-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/adopt a highway/videos/adoptahighway-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/adopt a highway/videos/adoptahighway-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/adopt a highway/videos/adoptahighway-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/adopt a highway/videos/adoptahighway-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/adopt a highway/adoptahighway-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/adopt a highway/adoptahighway.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Adopt a Highway (2019)</p>
+							<p class="fwduvp-thumbnail-description">Adopt a Highway (2019) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Adventures Of Aladdin 2019 --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/adventures of aladdin/adventuresofaladdisasan-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/adventures of aladdin/videos/adventuresofaladdisasan-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/adventures of aladdin/videos/adventuresofaladdisasan-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/adventures of aladdin/videos/adventuresofaladdisasan-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/adventures of aladdin/videos/adventuresofaladdisasan-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/adventures of aladdin/adventuresofaladdisasan-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/adventures of aladdin/adventuresofaladdisasan.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Adventures Of Aladdin 2019</p>
+							<p class="fwduvp-thumbnail-description">Adventures Of Aladdin 2019 computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  After (2019) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/after/after-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/after/videos/after-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/after/videos/after-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/after/videos/after-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/after/videos/after-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/after/after-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/after/after.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">After (2019)</p>
+							<p class="fwduvp-thumbnail-description">After (2019) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Aladdin (2019) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/aladdin/aladdin-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/aladdin/videos/aladdin-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/aladdin/videos/aladdin-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/aladdin/videos/aladdin-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/aladdin/videos/aladdin-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/aladdin/aladdin-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/aladdin/aladdin.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Aladdin (2019)</p>
+							<p class="fwduvp-thumbnail-description">Aladdin (2019) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Alita Battle Angel (2019) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/alita battle angel/alitabattleangel-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/alita battle angel/videos/alitabattleangel-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/alita battle angel/videos/alitabattleangel-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/alita battle angel/videos/alitabattleangel-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/alita battle angel/videos/alitabattleangel-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/alita battle angel/alitabattleangel-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/alita battle angel/alitabattleangel.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Alita Battle Angel (2019)</p>
+							<p class="fwduvp-thumbnail-description">Alita Battle Angel (2019) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Angel Has Fallen 2019 --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/angel has fallen/angelhasfallen-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/angel has fallen/videos/angelhasfallen-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/angel has fallen/videos/angelhasfallen-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/angel has fallen/videos/angelhasfallen-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/angel has fallen/videos/angelhasfallen-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/angel has fallen/angelhasfallen-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/angel has fallen/angelhasfallen.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Angel Has Fallen 2019</p>
+							<p class="fwduvp-thumbnail-description">Angel Has Fallen 2019 computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Anna 2019 --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/anna/anna-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/anna/videos/anna-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/anna/videos/anna-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/anna/videos/anna-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/anna/videos/anna-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/anna/anna-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/anna/anna.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Anna 2019</p>
+							<p class="fwduvp-thumbnail-description">Anna 2019 computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Annabelle Comes Home (2019) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/annabelle comes home/annabellecomeshome-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/annabelle comes home/videos/annabellecomeshome-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/annabelle comes home/videos/annabellecomeshome-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/annabelle comes home/videos/annabellecomeshome-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/annabelle comes home/videos/annabellecomeshome-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/annabelle comes home/annabellecomeshome-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/annabelle comes home/annabellecomeshome.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Annabelle Comes Home (2019)</p>
+							<p class="fwduvp-thumbnail-description">Annabelle Comes Home (2019) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Apollo 11 (2019) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/apollo 11/apollo11-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/apollo 11/videos/apollo11-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/apollo 11/videos/apollo11-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/apollo 11/videos/apollo11-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/apollo 11/videos/apollo11-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/apollo 11/apollo11-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/apollo 11/apollo11.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Apollo 11 (2019)</p>
+							<p class="fwduvp-thumbnail-description">Apollo 11 (2019) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Article 15 2019 --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/article 15/article15-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/article 15/videos/article15-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/article 15/videos/article15-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/article 15/videos/article15-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/article 15/videos/article15-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/article 15/article15-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/article 15/article15.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Article 15 2019</p>
+							<p class="fwduvp-thumbnail-description">Article 15 2019 computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Assimilate 2019 --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/assimillate/assimillate-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/assimillate/videos/assimillate-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/assimillate/videos/assimillate-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/assimillate/videos/assimillate-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/assimillate/videos/assimillate-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/assimillate/assimillate-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/assimillate/assimillate.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Assimilate 2019</p>
+							<p class="fwduvp-thumbnail-description">Assimilate 2019 computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Avengement (2019) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/avengement/avengement-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/avengement/videos/avengement-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/avengement/videos/avengement-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/avengement/videos/avengement-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/avengement/videos/avengement-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/avengement/avengement-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/avengement/avengement.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Avengement (2019)</p>
+							<p class="fwduvp-thumbnail-description">Avengement (2019) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Avengers Endgame (2019) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/avengers endgame/avengersendgame-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/avengers endgame/videos/avengersendgame-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/avengers endgame/videos/avengersendgame-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/avengers endgame/videos/avengersendgame-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/avengers endgame/videos/avengersendgame-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/avengers endgame/avengersendgame-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/avengers endgame/avengersendgame.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Avengers Endgame (2019)</p>
+							<p class="fwduvp-thumbnail-description">Avengers Endgame (2019) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Batman vs Teenage Mutant Ninja Turtles 2019 --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/batman vs teenage mutant ninja turtles/batmanvsteenagemutantninjaturtles-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/batman vs teenage mutant ninja turtles/videos/batmanvsteenagemutantninjaturtles-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/batman vs teenage mutant ninja turtles/videos/batmanvsteenagemutantninjaturtles-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/batman vs teenage mutant ninja turtles/videos/batmanvsteenagemutantninjaturtles-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/batman vs teenage mutant ninja turtles/videos/batmanvsteenagemutantninjaturtles-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/batman vs teenage mutant ninja turtles/batmanvsteenagemutantninjaturtles-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/batman vs teenage mutant ninja turtles/batmanvsteenagemutantninjaturtles.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Batman vs Teenage Mutant Ninja Turtles 2019</p>
+							<p class="fwduvp-thumbnail-description">Batman vs Teenage Mutant Ninja Turtles 2019 computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Black and Blue (2019) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/black and blue/blackandblue-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/black and blue/videos/blackandblue-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/black and blue/videos/blackandblue-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/black and blue/videos/blackandblue-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/black and blue/videos/blackandblue-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/black and blue/blackandblue-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/black and blue/blackandblue.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Black and Blue (2019)</p>
+							<p class="fwduvp-thumbnail-description">Black and Blue (2019) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Booksmart 2019 --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/booksmart/booksmart-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/booksmart/videos/booksmart-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/booksmart/videos/booksmart-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/booksmart/videos/booksmart-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/booksmart/videos/booksmart-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/booksmart/booksmart-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/booksmart/booksmart.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Booksmart 2019</p>
+							<p class="fwduvp-thumbnail-description">Booksmart 2019 computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Brightburn (2019) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/brightburn/brightburn-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/brightburn/videos/brightburn-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/brightburn/videos/brightburn-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/brightburn/videos/brightburn-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/brightburn/videos/brightburn-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/brightburn/brightburn-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/brightburn/brightburn.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Brightburn (2019)</p>
+							<p class="fwduvp-thumbnail-description">Brightburn (2019) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Captain Marvel 2019 --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/captain marvel/captainmarvel-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/captain marvel/videos/captainmarvel-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/captain marvel/videos/captainmarvel-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/captain marvel/videos/captainmarvel-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/captain marvel/videos/captainmarvel-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/captain marvel/captainmarvel-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/captain marvel/captainmarvel.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Captain Marvel 2019</p>
+							<p class="fwduvp-thumbnail-description">Captain Marvel 2019 computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Captive State 2019 --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/captive state/captivestate-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/captive state/videos/captivestate-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/captive state/videos/captivestate-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/captive state/videos/captivestate-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/captive state/videos/captivestate-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/captive state/captivestate-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/captive state/captivestate.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Captive State 2019</p>
+							<p class="fwduvp-thumbnail-description">Captive State 2019 computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  3 from Hell (2019) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/3 from hell/3fromhell-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/3 from hell/videos/3fromhell-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/3 from hell/videos/3fromhell-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/3 from hell/videos/3fromhell-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/3 from hell/videos/3fromhell-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/3 from hell/3fromhell-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/3 from hell/3fromhell.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">3 from Hell (2019)</p>
+							<p class="fwduvp-thumbnail-description">3 from Hell (2019) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Charlie's Angels (2019) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/charlies angels/charliesangel-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/charlies angels/videos/charliesangel-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/charlies angels/videos/charliesangel-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/charlies angels/videos/charliesangel-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/charlies angels/videos/charliesangel-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/charlies angels/charliesangel-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/charlies angels/charliesangel.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Charlie's Angels (2019)</p>
+							<p class="fwduvp-thumbnail-description">Charlie's Angels (2019) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!----  Child’s Play 2019 --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/childs play/childsplay-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/childs play/videos/childsplay-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/childs play/videos/childsplay-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/childs play/videos/childsplay-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/childs play/videos/childsplay-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/childs play/childsplay-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/childs play/childsplay.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Child’s Play 2019</p>
+							<p class="fwduvp-thumbnail-description">Child’s Play 2019 computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!----  Code 8 (2019) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/code 8/code8-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/code 8/videos/code8-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/code 8/videos/code8-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/code 8/videos/code8-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/code 8/videos/code8-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/code 8/code8-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/code 8/code8.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Code 8 (2019)</p>
+							<p class="fwduvp-thumbnail-description">Code 8 (2019) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!----  Cold Pursuit 2019 --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/cold pursuit/coldpursuit-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/cold pursuit/videos/coldpursuit-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/cold pursuit/videos/coldpursuit-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/cold pursuit/videos/coldpursuit-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/cold pursuit/videos/coldpursuit-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/cold pursuit/coldpursuit-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/cold pursuit/coldpursuit.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Cold Pursuit 2019</p>
+							<p class="fwduvp-thumbnail-description">Cold Pursuit 2019 computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!----  Countdown (2019) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/countdown/countdown-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/countdown/videos/countdown-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/countdown/videos/countdown-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/countdown/videos/countdown-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/countdown/videos/countdown-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/countdown/countdown-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/countdown/countdown.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Countdown (2019)</p>
+							<p class="fwduvp-thumbnail-description">Countdown (2019) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!----  Crawl 2019 --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/crawl/crawl-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/crawl/videos/crawl-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/crawl/videos/crawl-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/crawl/videos/crawl-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/crawl/videos/crawl-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/crawl/crawl-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/crawl/crawl.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Crawl 2019</p>
+							<p class="fwduvp-thumbnail-description">Crawl 2019 computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!----  Critters Attack! (2019) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/critters attack/crittersattack-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/critters attack/videos/crittersattack-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/critters attack/videos/crittersattack-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/critters attack/videos/crittersattack-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/critters attack/videos/crittersattack-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/critters attack/crittersattack-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/critters attack/crittersattack.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Critters Attack! (2019)</p>
+							<p class="fwduvp-thumbnail-description">Critters Attack! (2019) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!----  Danger Close The Battle of Long Tan (2019) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/danger close the battle of long tan/dangerclosethebattleoflongtan-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/danger close the battle of long tan/videos/dangerclosethebattleoflongtan-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/danger close the battle of long tan/videos/dangerclosethebattleoflongtan-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/danger close the battle of long tan/videos/dangerclosethebattleoflongtan-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/danger close the battle of long tan/videos/dangerclosethebattleoflongtan-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/danger close the battle of long tan/dangerclosethebattleoflongtan-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/danger close the battle of long tan/dangerclosethebattleoflongtan.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Danger Close The Battle of Long Tan (2019)</p>
+							<p class="fwduvp-thumbnail-description">Danger Close The Battle of Long Tan (2019) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!----  Descendants 3 (2019) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/descendats 3/descendants3-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/descendats 3/videos/descendants3-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/descendats 3/videos/descendants3-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/descendats 3/videos/descendants3-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/descendats 3/videos/descendants3-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/descendats 3/descendants3-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/descendats 3/descendants3.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Descendants 3 (2019)</p>
+							<p class="fwduvp-thumbnail-description">Descendants 3 (2019) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!----  Doctor Sleep (2019) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/doctor sleep/doctorsleep-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/doctor sleep/videos/doctorsleep-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/doctor sleep/videos/doctorsleep-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/doctor sleep/videos/doctorsleep-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/doctor sleep/videos/doctorsleep-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/doctor sleep/doctorsleep-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/doctor sleep/doctorsleep.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Doctor Sleep (2019)</p>
+							<p class="fwduvp-thumbnail-description">Doctor Sleep (2019) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!----  Doom Annihilation (2019) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/doom amilation/doomannihilation-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/doom amilation/videos/doomannihilation-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/doom amilation/videos/doomannihilation-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/doom amilation/videos/doomannihilation-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/doom amilation/videos/doomannihilation-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/doom amilation/doomannihilation-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/doom amilation/doomannihilation.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Doom Annihilation (2019)</p>
+							<p class="fwduvp-thumbnail-description">Doom Annihilation (2019) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!----  Dora and the Lost City of Gold 2019 --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/dora and the lost city of gold/doraandthelostcityofgold-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/dora and the lost city of gold/videos/doraandthelostcityofgold-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/dora and the lost city of gold/videos/doraandthelostcityofgold-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/dora and the lost city of gold/videos/doraandthelostcityofgold-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/dora and the lost city of gold/videos/doraandthelostcityofgold-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/dora and the lost city of gold/doraandthelostcityofgold-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/dora and the lost city of gold/doraandthelostcityofgold.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Dora and the Lost City of Gold 2019</p>
+							<p class="fwduvp-thumbnail-description">Dora and the Lost City of Gold 2019 computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!----  Downton Abbey (2019) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/downton abbey/downtonabbey-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/downton abbey/videos/downtonabbey-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/downton abbey/videos/downtonabbey-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/downton abbey/videos/downtonabbey-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/downton abbey/videos/downtonabbey-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/downton abbey/downtonabbey-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/downton abbey/downtonabbey.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Downton Abbey (2019)</p>
+							<p class="fwduvp-thumbnail-description">Downton Abbey (2019) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!----  Dumbo 2019 --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/dumbo/dumbo-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/dumbo/videos/dumbo-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/dumbo/videos/dumbo-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/dumbo/videos/dumbo-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/dumbo/videos/dumbo-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/dumbo/dumbo-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/dumbo/dumbo.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Dumbo 2019</p>
+							<p class="fwduvp-thumbnail-description">Dumbo 2019 computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!----  Escape Plan The Extractors (2019) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/escape plan the extractors/escapeplantheextractors-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/escape plan the extractors/videos/escapeplantheextractors-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/escape plan the extractors/videos/escapeplantheextractors-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/escape plan the extractors/videos/escapeplantheextractors-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/escape plan the extractors/videos/escapeplantheextractors-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/escape plan the extractors/escapeplantheextractors-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/escape plan the extractors/escapeplantheextractors.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Escape Plan The Extractors (2019)</p>
+							<p class="fwduvp-thumbnail-description">Escape Plan The Extractors (2019) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!----  Escape Room_2019 --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/escape room/escaperoom-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/escape room/videos/escaperoom-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/escape room/videos/escaperoom-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/escape room/videos/escaperoom-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/escape room/videos/escaperoom-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/escape room/escaperoom-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/escape room/escaperoom.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Escape Room_2019</p>
+							<p class="fwduvp-thumbnail-description">Escape Room_2019 computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!----  Extreme Job 2019 --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/extreme job/extremejob-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/extreme job/videos/extremejob-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/extreme job/videos/extremejob-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/extreme job/videos/extremejob-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/extreme job/videos/extremejob-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/extreme job/extremejob-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/extreme job/extremejob.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Extreme Job 2019</p>
+							<p class="fwduvp-thumbnail-description">Extreme Job 2019 computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!----  Fast & Furious Hobbs & Shaw 2019 --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/fastforiushobsandshaw/fastforiushobsandshaw-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/fastforiushobsandshaw/videos/fastforiushobsandshaw-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/fastforiushobsandshaw/videos/fastforiushobsandshaw-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/fastforiushobsandshaw/videos/fastforiushobsandshaw-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/fastforiushobsandshaw/videos/fastforiushobsandshaw-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/fastforiushobsandshaw/fastforiushobsandshaw-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/fastforiushobsandshaw/fastforiushobsandshaw.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Fast & Furious Hobbs & Shaw 2019</p>
+							<p class="fwduvp-thumbnail-description">Fast & Furious Hobbs & Shaw 2019 computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!----  Fighting with My Family 2019 --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/fightingwithmyfamily/fightingwithmyfamily-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/fightingwithmyfamily/videos/fightingwithmyfamily-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/fightingwithmyfamily/videos/fightingwithmyfamily-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/fightingwithmyfamily/videos/fightingwithmyfamily-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/fightingwithmyfamily/videos/fightingwithmyfamily-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/fightingwithmyfamily/fightingwithmyfamily-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/fightingwithmyfamily/fightingwithmyfamily.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Fighting with My Family 2019</p>
+							<p class="fwduvp-thumbnail-description">Fighting with My Family 2019 computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!----  Five Feet Apart 2019 --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/fivefeetapart/fivefeetapart-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/fivefeetapart/videos/fivefeetapart-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/fivefeetapart/videos/fivefeetapart-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/fivefeetapart/videos/fivefeetapart-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/fivefeetapart/videos/fivefeetapart-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/fivefeetapart/fivefeetapart-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/fivefeetapart/fivefeetapart.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Five Feet Apart 2019</p>
+							<p class="fwduvp-thumbnail-description">Five Feet Apart 2019 computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!----  For Sama 2019 --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/for sama/forsama-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/for sama/videos/forsama-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/for sama/videos/forsama-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/for sama/videos/forsama-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/for sama/videos/forsama-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/for sama/forsama-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/for sama/forsama.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">For Sama 2019</p>
+							<p class="fwduvp-thumbnail-description">For Sama 2019 computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!----  Ford v Ferrari (2019) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/ford v ferrari/fordvferrari-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/ford v ferrari/videos/fordvferrari-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/ford v ferrari/videos/fordvferrari-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/ford v ferrari/videos/fordvferrari-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/ford v ferrari/videos/fordvferrari-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/ford v ferrari/fordvferrari-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/ford v ferrari/fordvferrari.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Ford v Ferrari (2019)</p>
+							<p class="fwduvp-thumbnail-description">Ford v Ferrari (2019) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!----  Gemini Man 2019 --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/gemini man/geminiman-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/gemini man/videos/geminiman-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/gemini man/videos/geminiman-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/gemini man/videos/geminiman-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/gemini man/videos/geminiman-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/gemini man/geminiman-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/gemini man/geminiman.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Gemini Man 2019</p>
+							<p class="fwduvp-thumbnail-description">Gemini Man 2019 computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!----  Glass 2019 --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/glass/glass-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/glass/videos/glass-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/glass/videos/glass-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/glass/videos/glass-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/glass/videos/glass-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/glass/glass-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/glass/glass.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Glass 2019</p>
+							<p class="fwduvp-thumbnail-description">Glass 2019 computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!----  Godzilla King of the Monsters (2019) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/godzillakingofthemonsters/godzillakingofthemonsters-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/godzillakingofthemonsters/videos/godzillakingofthemonsters-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/godzillakingofthemonsters/videos/godzillakingofthemonsters-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/godzillakingofthemonsters/videos/godzillakingofthemonsters-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/godzillakingofthemonsters/videos/godzillakingofthemonsters-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/godzillakingofthemonsters/godzillakingofthemonsters-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/godzillakingofthemonsters/godzillakingofthemonsters.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Godzilla King of the Monsters (2019)</p>
+							<p class="fwduvp-thumbnail-description">Godzilla King of the Monsters (2019) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!----  Good Boys (2019) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/goodboys/goodboys-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/goodboys/videos/goodboys-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/goodboys/videos/goodboys-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/goodboys/videos/goodboys-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/goodboys/videos/goodboys-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/goodboys/goodboys-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/goodboys/goodboys.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Good Boys (2019)</p>
+							<p class="fwduvp-thumbnail-description">Good Boys (2019) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!----  Happy Death Day 2U 2019 --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/happy death day/happydeathday2u-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/happy death day/videos/happydeathday2u-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/happy death day/videos/happydeathday2u-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/happy death day/videos/happydeathday2u-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/happy death day/videos/happydeathday2u-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/happy death day/happydeathday2u-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/happy death day/happydeathday2u.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Happy Death Day 2U 2019</p>
+							<p class="fwduvp-thumbnail-description">Happy Death Day 2U 2019 computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!----  Harriet (2019) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/harriet/harriet-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/harriet/videos/harriet-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/harriet/videos/harriet-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/harriet/videos/harriet-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/harriet/videos/harriet-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/harriet/harriet-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/harriet/harriet.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Harriet (2019)</p>
+							<p class="fwduvp-thumbnail-description">Harriet (2019) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!----  Hellboy 2019 --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/hellboy/hellboy-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/hellboy/videos/hellboy-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/hellboy/videos/hellboy-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/hellboy/videos/hellboy-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/hellboy/videos/hellboy-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/hellboy/hellboy-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/hellboy/hellboy.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Hellboy 2019</p>
+							<p class="fwduvp-thumbnail-description">Hellboy 2019 computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!----  Hit And Run Squad (2019) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/hit and run/hitandrunsquad-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/hit and run/videos/hitandrunsquad-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/hit and run/videos/hitandrunsquad-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/hit and run/videos/hitandrunsquad-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/hit and run/videos/hitandrunsquad-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/hit and run/hitandrunsquad-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/hit and run/hitandrunsquad.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Hit And Run Squad (2019)</p>
+							<p class="fwduvp-thumbnail-description">Hit And Run Squad (2019) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!----  Hustlers (2019) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/hustlers/hustlers-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/hustlers/videos/hustlers-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/hustlers/videos/hustlers-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/hustlers/videos/hustlers-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/hustlers/videos/hustlers-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/hustlers/hustlers-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/hustlers/hustlers.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Hustlers (2019)</p>
+							<p class="fwduvp-thumbnail-description">Hustlers (2019) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!----  I Am Mother (2019) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies 2019/i am mother/iammother-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies 2019/i am mother/videos/iammother-240p.mp4', label:'small version'}, {source:'content/realtv/Movies 2019/i am mother/videos/iammother-360p.mp4', label:'sd360'},{source:'content/realtv/Movies 2019/i am mother/videos/iammother-480p.mp4', label:'hd480'},{source:'content/realtv/Movies 2019/i am mother/videos/iammother-1080p.mp4', label:'hd1080'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies 2019/i am mother/iammother-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies 2019/i am mother/iammother.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">I Am Mother (2019)</p>
+							<p class="fwduvp-thumbnail-description">I Am Mother (2019) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                
+
+<!---- END --------------------------------------------------------------------------------->
+				
+			</ul>		
+	</body>
+</html>
+
+
+
+
+
