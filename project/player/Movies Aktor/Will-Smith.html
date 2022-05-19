@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>RealTv</title>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1 user-scalable=no" />
+		
+		<link rel="stylesheet" type="text/css"  href="content/global.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+		
+		<script type="text/javascript" src="java/FWDUVPlayer.js"></script>
+		
+		<!-- Setup video player-->
+		<script type="text/javascript">
+			FWDUVPUtils.onReady(function(){
+				
+				new FWDUVPlayer({	
+					
+					//main settings
+					
+					instanceName:"player1",
+					parentId:"myDiv",
+					playlistsId:"playlists",
+					mainFolderPath:"content",
+					skinPath:"classic_skin_dark",
+					displayType:"responsive",
+					initializeOnlyWhenVisible:"no",
+					useVectorIcons:"no",
+					fillEntireVideoScreen:"no",
+					fillEntireposterScreen:"yes",
+					goFullScreenOnButtonPlay:"no",
+					playsinline:"yes",
+					privateVideoPassword:"428c841430ea18a70f7b06525d4b748a",
+					youtubeAPIKey:"",
+					useHEXColorsForSkin:"no",
+					normalHEXButtonsColor:"#666666",
+					googleAnalyticsTrackingCode:"",
+					useResumeOnPlay:"no",
+					useDeepLinking:"yes",
+					showPreloader:"yes",
+					preloaderBackgroundColor:"#000000",
+					preloaderFillColor:"#FFFFFF",
+					addKeyboardSupport:"yes",
+					autoScale:"yes",
+					showButtonsToolTip:"yes", 
+					stopVideoWhenPlayComplete:"no",
+					playAfterVideoStop:"no",
+					autoPlay:"no",
+					autoPlayText:"Click To Unmute",
+					loop:"no",
+					shuffle:"no",
+					showErrorInfo:"yes",
+					maxWidth:980,
+					maxHeight:552,
+					volume:.8,
+					rewindTime:10,
+					buttonsToolTipHideDelay:1.5,
+					backgroundColor:"#000000",
+					videoBackgroundColor:"#000000",
+					posterBackgroundColor:"#000000",
+					buttonsToolTipFontColor:"#5a5a5a",
+					
+					//logo settings
+					
+					showLogo:"yes",
+					logoPath:"",
+					hideLogoWithController:"yes",
+					logoPosition:"topRight",
+					logoLink:"http://www.webdesign-flash.ro/",
+					logoPath:"",
+					logoMargins:10,
+					
+					//playlists/categories settings
+					
+					showPlaylistsSearchInput:"yes",
+					usePlaylistsSelectBox:"yes",
+					showPlaylistsButtonAndPlaylists:"yes",
+					showPlaylistsByDefault:"no",
+					thumbnailSelectedType:"opacity",
+					startAtPlaylist:0,
+					buttonsMargins:15,
+					thumbnailMaxWidth:350, 
+					thumbnailMaxHeight:350,
+					horizontalSpaceBetweenThumbnails:40,
+					verticalSpaceBetweenThumbnails:40,
+					inputBackgroundColor:"#333333",
+					inputColor:"#999999",
+					
+					//playlist settings
+					
+					showPlaylistButtonAndPlaylist:"yes",					<!-- Tombol Playlist -->
+					playlistPosition:"right",
+					showPlaylistByDefault:"yes",
+					showPlaylistName:"yes",
+					showSearchInput:"yes",
+					showLoopButton:"yes",
+					showShuffleButton:"yes",
+					showPlaylistOnFullScreen:"no",
+					showNextAndPrevButtons:"yes",
+					showThumbnail:"yes",
+					showOnlyThumbnail:"no",
+					forceDisableDownloadButtonForFolder:"yes",
+					addMouseWheelSupport:"yes", 
+					startAtRandomVideo:"no",
+					stopAfterLastVideoHasPlayed:"no",
+					addScrollOnMouseMove:"no",
+					randomizePlaylist:'no',
+					folderVideoLabel:"VIDEO ",
+					playlistRightWidth:310,
+					playlistBottomHeight:380,
+					startAtVideo:0,
+					maxPlaylistItems:1000,									<!-- Jumlah Playlist -->
+					thumbnailWidth:71,
+					thumbnailHeight:71,
+					spaceBetweenControllerAndPlaylist:1,
+					spaceBetweenThumbnails:1,
+					scrollbarOffestWidth:10,
+					scollbarSpeedSensitivity:.5,
+					playlistBackgroundColor:"#000000",
+					playlistNameColor:"#FFFFFF",
+					thumbnailNormalBackgroundColor:"#1b1b1b",
+					thumbnailHoverBackgroundColor:"#313131",
+					thumbnailDisabledBackgroundColor:"#272727",
+					searchInputBackgroundColor:"#000000",
+					searchInputColor:"#bdbdbd",
+					youtubeAndFolderVideoTitleColor:"#FFFFFF",
+					folderAudioSecondTitleColor:"#999999",
+					youtubeOwnerColor:"#bdbdbd",
+					youtubeDescriptionColor:"#bdbdbd",
+					mainSelectorBackgroundSelectedColor:"#FFFFFF",
+					mainSelectorTextNormalColor:"#FFFFFF",
+					mainSelectorTextSelectedColor:"#000000",
+					mainButtonBackgroundNormalColor:"#212021",
+					mainButtonBackgroundSelectedColor:"#FFFFFF",
+					mainButtonTextNormalColor:"#FFFFFF",
+					mainButtonTextSelectedColor:"#000000",
+					
+					//controller settings
+					
+					showController:"yes",					<!-- Tampilan Pengaturan -->
+					showControllerWhenVideoIsStopped:"yes",
+					showNextAndPrevButtonsInController:"no",
+					showRewindButton:"no",					<!-- Playback -->					
+					showPlaybackRateButton:"yes",
+					showVolumeButton:"yes",
+					showTime:"yes",
+					showQualityButton:"yes",
+					showInfoButton:"yes",					<!-- Info -->
+					showDownloadButton:"no",				<!-- Download -->
+					showShareButton:"no",					<!-- Bagikan -->
+					showEmbedButton:"yes",					<!-- Iframe -->
+					showChromecastButton:"no",
+					showFullScreenButton:"yes",
+					disableVideoScrubber:"no",
+					showScrubberWhenControllerIsHidden:"yes",
+					showMainScrubberToolTipLabel:"yes",
+					showDefaultControllerForVimeo:"yes",
+					repeatBackground:"no",
+					controllerHeight:42,
+					controllerHideDelay:3,
+					startSpaceBetweenButtons:10,
+					spaceBetweenButtons:10,
+					scrubbersOffsetWidth:2,
+					mainScrubberOffestTop:16,
+					timeOffsetLeftWidth:2,
+					timeOffsetRightWidth:3,
+					timeOffsetTop:0,
+					volumeScrubberHeight:80,
+					volumeScrubberOfsetHeight:12,
+					timeColor:"#bdbdbd",
+					youtubeQualityButtonNormalColor:"#bdbdbd",
+					youtubeQualityButtonSelectedColor:"#FFFFFF",
+					scrubbersToolTipLabelBackgroundColor:"#FFFFFF",
+					scrubbersToolTipLabelFontColor:"#5a5a5a",
+					
+					//advertisement on pause window
+					
+					aopwTitle:"Advertisement",
+					aopwWidth:400,
+					aopwHeight:240,
+					aopwBorderSize:6,
+					aopwTitleColor:"#FFFFFF",
+					
+					//subtitle
+					
+					subtitlesOffLabel:"Subtitle off",
+					//popup add windows
+					showPopupAdsCloseButton:"yes",
+					
+					//embed window and info window
+					
+					embedAndInfoWindowCloseButtonMargins:15,
+					borderColor:"#333333",
+					mainLabelsColor:"#FFFFFF",
+					secondaryLabelsColor:"#bdbdbd",
+					shareAndEmbedTextColor:"#5a5a5a",
+					inputBackgroundColor:"#000000",
+					inputColor:"#FFFFFF",
+					
+					//login
+					
+		            playIfLoggedIn:"no",
+		            playIfLoggedInMessage:"Please <a href='https://google.com' target='_blank'>login</a> to play this video.",
+					
+					//audio visualizer
+					
+					audioVisualizerLinesColor:"#0099FF",
+					audioVisualizerCircleColor:"#FFFFFF",
+					
+					//lightbox settings
+					
+					closeLightBoxWhenPlayComplete:"no",
+					lightBoxBackgroundOpacity:.6,
+					lightBoxBackgroundColor:"#000000",
+					
+					//sticky on scroll
+					
+					stickyOnScroll:"no",
+					stickyOnScrollShowOpener:"yes",
+					stickyOnScrollWidth:"700",
+					stickyOnScrollHeight:"394",
+					
+					//sticky display settings
+					
+					showOpener:"yes",
+					showOpenerPlayPauseButton:"yes",
+					verticalPosition:"bottom",
+					horizontalPosition:"center",
+					showPlayerByDefault:"yes",
+					animatePlayer:"yes",
+					openerAlignment:"right",
+					mainBackgroundImagePath:"content/minimal_skin_dark/main-background.png",
+					openerEqulizerOffsetTop:-1,
+					openerEqulizerOffsetLeft:3,
+					offsetX:0,
+					offsetY:0,
+					
+					//playback rate / speed
+					
+					defaultPlaybackRate:1, //0.25, 0.5, 1, 1.25, 1.2, 2
+					
+					//cuepoints
+					
+					executeCuepointsOnlyOnce:"no",
+					
+					//annotations
+					
+					showAnnotationsPositionTool:"no",
+					
+					//ads
+					
+					openNewPageAtTheEndOfTheAds:"no",
+					adsButtonsPosition:"left",
+					skipToVideoText:"You can skip to video in: ",
+					skipToVideoButtonText:"Skip Ad",
+					adsTextNormalColor:"#bdbdbd",
+					adsTextSelectedColor:"#FFFFFF",
+					adsBorderNormalColor:"#444444",
+					adsBorderSelectedColor:"#FFFFFF",
+					
+					//a to b loop
+					
+					useAToB:"yes",
+					atbTimeBackgroundColor:"transparent",
+					atbTimeTextColorNormal:"#888888",
+					atbTimeTextColorSelected:"#FFFFFF",
+					atbButtonTextNormalColor:"#888888",
+					atbButtonTextSelectedColor:"#FFFFFF",
+					atbButtonBackgroundNormalColor:"#FFFFFF",
+					atbButtonBackgroundSelectedColor:"#000000",
+					
+					//thumbnails preview
+					
+					thumbnailsPreviewWidth:196,
+					thumbnailsPreviewHeight:110,
+					thumbnailsPreviewBackgroundColor:"#000000",
+					thumbnailsPreviewBorderColor:"#666",
+					thumbnailsPreviewLabelBackgroundColor:"#666",
+					thumbnailsPreviewLabelFontColor:"#FFF",
+					
+					// context menu
+					
+					showContextmenu:'no',					<!-- Klik kanan -->
+					showScriptDeveloper:"no",
+					contextMenuBackgroundColor:"#1f1f1f",
+					contextMenuBorderColor:"#1f1f1f",
+					contextMenuSpacerColor:"#333",
+					contextMenuItemNormalColor:"#666666",
+					contextMenuItemSelectedColor:"#FFFFFF",
+					contextMenuItemDisabledColor:"#333"
+				});
+			});
+			
+		</script>
+		
+	</head>
+
+	<body style="background-color:#999999">	
+	
+		<div id="myDiv" style="position:relative; left:0px; top:0px;"></div>
+		
+		<!--  Playlists -->
+			<ul id="playlists" style="display:none;">
+				<li data-source="playlist1" data-playlist-name="MY RealTv" data-thumbnail-path="content/thumbnails/p-html.jpg">
+					<p class="fwduvp-categories-title"><span class="fwduvp-header">Title: </span><span class="fwduvp-title">My HTML playlist</span></p>
+					<p class="fwduvp-categories-type"><span class="fwduvp-header">Type: </span>HTML</p>
+					<p class="fwduvp-categories-description"><span class="fwduvp-header">Description: </span>Created using <strong>HTML markup</strong>, all format are supported and it can have mixed video formats.</p>
+				</li>
+			</ul>
+			
+
+			<!-- Playlist MY RealTv -->
+			<ul id="playlist1" style="display:none;">
+
+<!----  Ivan  --------------------------------------------------------------------------------->
+<!----  Movies Actor Will Smith  --------------------------------------------------------------------------------->
+				<!----  After Earth --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Will Smith/After Earth/afterearth-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Will Smith/After Earth/videos/afterearth-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Will Smith/After Earth/videos/afterearth-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Will Smith/After Earth/videos/afterearth-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Will Smith/After Earth/videos/afterearth-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Will Smith/After Earth/afterearth-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Will Smith/After Earth/afterearth.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">After Earth</p>
+							<p class="fwduvp-thumbnail-description">After Earth computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Bad Boys 1 --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Will Smith/Bad Boys 1/badboys-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Will Smith/Bad Boys 1/videos/badboys-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Will Smith/Bad Boys 1/videos/badboys-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Will Smith/Bad Boys 1/videos/badboys-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Will Smith/Bad Boys 1/videos/badboys-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Will Smith/Bad Boys 1/badboys-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Will Smith/Bad Boys 1/badboys.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Bad Boys 1</p>
+							<p class="fwduvp-thumbnail-description">Bad Boys 1 computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Bad Boys 2 --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Will Smith/Bad Boys 2/badboys2-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Will Smith/Bad Boys 2/videos/badboys2-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Will Smith/Bad Boys 2/videos/badboys2-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Will Smith/Bad Boys 2/videos/badboys2-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Will Smith/Bad Boys 2/videos/badboys2-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Will Smith/Bad Boys 2/badboys2-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Will Smith/Bad Boys 2/badboys2.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Bad Boys 2</p>
+							<p class="fwduvp-thumbnail-description">Bad Boys 2 computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Bright --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Will Smith/Bright/bright-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Will Smith/Bright/videos/bright-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Will Smith/Bright/videos/bright-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Will Smith/Bright/videos/bright-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Will Smith/Bright/videos/bright-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Will Smith/Bright/bright-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Will Smith/Bright/bright.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Bright</p>
+							<p class="fwduvp-thumbnail-description">Bright computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Concussion --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Will Smith/Concussion/concussion-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Will Smith/Concussion/videos/concussion-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Will Smith/Concussion/videos/concussion-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Will Smith/Concussion/videos/concussion-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Will Smith/Concussion/videos/concussion-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Will Smith/Concussion/concussion-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Will Smith/Concussion/concussion.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Concussion</p>
+							<p class="fwduvp-thumbnail-description">Concussion computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Enemy Of The State --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Will Smith/Enemy Of The State/enemyofthestate-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Will Smith/Enemy Of The State/videos/enemyofthestate-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Will Smith/Enemy Of The State/videos/enemyofthestate-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Will Smith/Enemy Of The State/videos/enemyofthestate-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Will Smith/Enemy Of The State/videos/enemyofthestate-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Will Smith/Enemy Of The State/enemyofthestate-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Will Smith/Enemy Of The State/enemyofthestate.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Enemy Of The State</p>
+							<p class="fwduvp-thumbnail-description">Enemy Of The State computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Focus --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Will Smith/Focus/focus-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Will Smith/Focus/videos/focus-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Will Smith/Focus/videos/focus-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Will Smith/Focus/videos/focus-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Will Smith/Focus/videos/focus-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Will Smith/Focus/focus-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Will Smith/Focus/focus.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Focus</p>
+							<p class="fwduvp-thumbnail-description">Focus computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Hancock --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Will Smith/Hancock/hancock-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Will Smith/Hancock/videos/hancock-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Will Smith/Hancock/videos/hancock-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Will Smith/Hancock/videos/hancock-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Will Smith/Hancock/videos/hancock-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Will Smith/Hancock/hancock-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Will Smith/Hancock/hancock.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Hancock</p>
+							<p class="fwduvp-thumbnail-description">Hancock computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Hitch --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Will Smith/Hitch/hitch-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Will Smith/Hitch/videos/hitch-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Will Smith/Hitch/videos/hitch-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Will Smith/Hitch/videos/hitch-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Will Smith/Hitch/videos/hitch-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Will Smith/Hitch/hitch-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Will Smith/Hitch/hitch.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Hitch</p>
+							<p class="fwduvp-thumbnail-description">Hitch computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  I Am Legend --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Will Smith/I Am Legend/iamlegend-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Will Smith/I Am Legend/videos/iamlegend-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Will Smith/I Am Legend/videos/iamlegend-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Will Smith/I Am Legend/videos/iamlegend-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Will Smith/I Am Legend/videos/iamlegend-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Will Smith/I Am Legend/iamlegend-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Will Smith/I Am Legend/iamlegend.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">I Am Legend</p>
+							<p class="fwduvp-thumbnail-description">I Am Legend computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  I Robot --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Will Smith/I Robot/irobot-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Will Smith/I Robot/videos/irobot-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Will Smith/I Robot/videos/irobot-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Will Smith/I Robot/videos/irobot-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Will Smith/I Robot/videos/irobot-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Will Smith/I Robot/irobot-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Will Smith/I Robot/irobot.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">I Robot</p>
+							<p class="fwduvp-thumbnail-description">I Robot computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Men In Black --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Will Smith/Men In Black/meninblack-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Will Smith/Men In Black/videos/meninblack-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Will Smith/Men In Black/videos/meninblack-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Will Smith/Men In Black/videos/meninblack-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Will Smith/Men In Black/videos/meninblack-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Will Smith/Men In Black/meninblack-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Will Smith/Men In Black/meninblack.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Men In Black</p>
+							<p class="fwduvp-thumbnail-description">Men In Black computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Men In Black 2 --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Will Smith/Men In Black 2/mib2-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Will Smith/Men In Black 2/videos/mib2-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Will Smith/Men In Black 2/videos/mib2-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Will Smith/Men In Black 2/videos/mib2-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Will Smith/Men In Black 2/videos/mib2-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Will Smith/Men In Black 2/mib2-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Will Smith/Men In Black 2/mib2.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Men In Black 2</p>
+							<p class="fwduvp-thumbnail-description">Men In Black 2 computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Men In Black 3 --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Will Smith/Men In Black 3/mib3-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Will Smith/Men In Black 3/videos/mib3-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Will Smith/Men In Black 3/videos/mib3-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Will Smith/Men In Black 3/videos/mib3-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Will Smith/Men In Black 3/videos/mib3-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Will Smith/Men In Black 3/mib3-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Will Smith/Men In Black 3/mib3.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Men In Black 3</p>
+							<p class="fwduvp-thumbnail-description">Men In Black 3 computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Seven Pounds --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Will Smith/Seven Pounds/sevenpounds-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Will Smith/Seven Pounds/videos/sevenpounds-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Will Smith/Seven Pounds/videos/sevenpounds-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Will Smith/Seven Pounds/videos/sevenpounds-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Will Smith/Seven Pounds/videos/sevenpounds-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Will Smith/Seven Pounds/sevenpounds-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Will Smith/Seven Pounds/sevenpounds.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Seven Pounds</p>
+							<p class="fwduvp-thumbnail-description">Seven Pounds computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Six Degrees Of Separation --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Will Smith/Six Degrees Of Separation/sixdegreesofseparation-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Will Smith/Six Degrees Of Separation/videos/sixdegreesofseparation-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Will Smith/Six Degrees Of Separation/videos/sixdegreesofseparation-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Will Smith/Six Degrees Of Separation/videos/sixdegreesofseparation-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Will Smith/Six Degrees Of Separation/videos/sixdegreesofseparation-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Will Smith/Six Degrees Of Separation/sixdegreesofseparation-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Will Smith/Six Degrees Of Separation/sixdegreesofseparation.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Six Degrees Of Separation</p>
+							<p class="fwduvp-thumbnail-description">Six Degrees Of Separation computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  The Legend Of Bagger Vance --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Will Smith/The Legend Of Bagger Vance/thelegendofbaggervance-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Will Smith/The Legend Of Bagger Vance/videos/thelegendofbaggervance-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Will Smith/The Legend Of Bagger Vance/videos/thelegendofbaggervance-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Will Smith/The Legend Of Bagger Vance/videos/thelegendofbaggervance-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Will Smith/The Legend Of Bagger Vance/videos/thelegendofbaggervance-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Will Smith/The Legend Of Bagger Vance/thelegendofbaggervance-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Will Smith/The Legend Of Bagger Vance/thelegendofbaggervance.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">The Legend Of Bagger Vance</p>
+							<p class="fwduvp-thumbnail-description">The Legend Of Bagger Vance computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  The Pursuit Of Happyness --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Will Smith/The Pursuit Of Happyness/thepursuitofhappyness-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Will Smith/The Pursuit Of Happyness/videos/thepursuitofhappyness-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Will Smith/The Pursuit Of Happyness/videos/thepursuitofhappyness-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Will Smith/The Pursuit Of Happyness/videos/thepursuitofhappyness-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Will Smith/The Pursuit Of Happyness/videos/thepursuitofhappyness-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Will Smith/The Pursuit Of Happyness/thepursuitofhappyness-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Will Smith/The Pursuit Of Happyness/thepursuitofhappyness.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">The Pursuit Of Happyness</p>
+							<p class="fwduvp-thumbnail-description">The Pursuit Of Happyness computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Wild Wild West --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Will Smith/Wild Wild West/wildwildwest-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Will Smith/Wild Wild West/videos/wildwildwest-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Will Smith/Wild Wild West/videos/wildwildwest-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Will Smith/Wild Wild West/videos/wildwildwest-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Will Smith/Wild Wild West/videos/wildwildwest-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Will Smith/Wild Wild West/wildwildwest-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Will Smith/Wild Wild West/wildwildwest.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Wild Wild West</p>
+							<p class="fwduvp-thumbnail-description">Wild Wild West computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+<!---- END --------------------------------------------------------------------------------->
+				
+			</ul>		
+	</body>
+</html>
+
+
+
+
+

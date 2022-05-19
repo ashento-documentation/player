@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>RealTv</title>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1 user-scalable=no" />
+		
+		<link rel="stylesheet" type="text/css"  href="content/global.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+		
+		<script type="text/javascript" src="java/FWDUVPlayer.js"></script>
+		
+		<!-- Setup video player-->
+		<script type="text/javascript">
+			FWDUVPUtils.onReady(function(){
+				
+				new FWDUVPlayer({	
+					
+					//main settings
+					
+					instanceName:"player1",
+					parentId:"myDiv",
+					playlistsId:"playlists",
+					mainFolderPath:"content",
+					skinPath:"classic_skin_dark",
+					displayType:"responsive",
+					initializeOnlyWhenVisible:"no",
+					useVectorIcons:"no",
+					fillEntireVideoScreen:"no",
+					fillEntireposterScreen:"yes",
+					goFullScreenOnButtonPlay:"no",
+					playsinline:"yes",
+					privateVideoPassword:"428c841430ea18a70f7b06525d4b748a",
+					youtubeAPIKey:"",
+					useHEXColorsForSkin:"no",
+					normalHEXButtonsColor:"#666666",
+					googleAnalyticsTrackingCode:"",
+					useResumeOnPlay:"no",
+					useDeepLinking:"yes",
+					showPreloader:"yes",
+					preloaderBackgroundColor:"#000000",
+					preloaderFillColor:"#FFFFFF",
+					addKeyboardSupport:"yes",
+					autoScale:"yes",
+					showButtonsToolTip:"yes", 
+					stopVideoWhenPlayComplete:"no",
+					playAfterVideoStop:"no",
+					autoPlay:"no",
+					autoPlayText:"Click To Unmute",
+					loop:"no",
+					shuffle:"no",
+					showErrorInfo:"yes",
+					maxWidth:980,
+					maxHeight:552,
+					volume:.8,
+					rewindTime:10,
+					buttonsToolTipHideDelay:1.5,
+					backgroundColor:"#000000",
+					videoBackgroundColor:"#000000",
+					posterBackgroundColor:"#000000",
+					buttonsToolTipFontColor:"#5a5a5a",
+					
+					//logo settings
+					
+					showLogo:"yes",
+					logoPath:"",
+					hideLogoWithController:"yes",
+					logoPosition:"topRight",
+					logoLink:"http://www.webdesign-flash.ro/",
+					logoPath:"",
+					logoMargins:10,
+					
+					//playlists/categories settings
+					
+					showPlaylistsSearchInput:"yes",
+					usePlaylistsSelectBox:"yes",
+					showPlaylistsButtonAndPlaylists:"yes",
+					showPlaylistsByDefault:"no",
+					thumbnailSelectedType:"opacity",
+					startAtPlaylist:0,
+					buttonsMargins:15,
+					thumbnailMaxWidth:350, 
+					thumbnailMaxHeight:350,
+					horizontalSpaceBetweenThumbnails:40,
+					verticalSpaceBetweenThumbnails:40,
+					inputBackgroundColor:"#333333",
+					inputColor:"#999999",
+					
+					//playlist settings
+					
+					showPlaylistButtonAndPlaylist:"yes",					<!-- Tombol Playlist -->
+					playlistPosition:"right",
+					showPlaylistByDefault:"yes",
+					showPlaylistName:"yes",
+					showSearchInput:"yes",
+					showLoopButton:"yes",
+					showShuffleButton:"yes",
+					showPlaylistOnFullScreen:"no",
+					showNextAndPrevButtons:"yes",
+					showThumbnail:"yes",
+					showOnlyThumbnail:"no",
+					forceDisableDownloadButtonForFolder:"yes",
+					addMouseWheelSupport:"yes", 
+					startAtRandomVideo:"no",
+					stopAfterLastVideoHasPlayed:"no",
+					addScrollOnMouseMove:"no",
+					randomizePlaylist:'no',
+					folderVideoLabel:"VIDEO ",
+					playlistRightWidth:310,
+					playlistBottomHeight:380,
+					startAtVideo:0,
+					maxPlaylistItems:1000,									<!-- Jumlah Playlist -->
+					thumbnailWidth:71,
+					thumbnailHeight:71,
+					spaceBetweenControllerAndPlaylist:1,
+					spaceBetweenThumbnails:1,
+					scrollbarOffestWidth:10,
+					scollbarSpeedSensitivity:.5,
+					playlistBackgroundColor:"#000000",
+					playlistNameColor:"#FFFFFF",
+					thumbnailNormalBackgroundColor:"#1b1b1b",
+					thumbnailHoverBackgroundColor:"#313131",
+					thumbnailDisabledBackgroundColor:"#272727",
+					searchInputBackgroundColor:"#000000",
+					searchInputColor:"#bdbdbd",
+					youtubeAndFolderVideoTitleColor:"#FFFFFF",
+					folderAudioSecondTitleColor:"#999999",
+					youtubeOwnerColor:"#bdbdbd",
+					youtubeDescriptionColor:"#bdbdbd",
+					mainSelectorBackgroundSelectedColor:"#FFFFFF",
+					mainSelectorTextNormalColor:"#FFFFFF",
+					mainSelectorTextSelectedColor:"#000000",
+					mainButtonBackgroundNormalColor:"#212021",
+					mainButtonBackgroundSelectedColor:"#FFFFFF",
+					mainButtonTextNormalColor:"#FFFFFF",
+					mainButtonTextSelectedColor:"#000000",
+					
+					//controller settings
+					
+					showController:"yes",					<!-- Tampilan Pengaturan -->
+					showControllerWhenVideoIsStopped:"yes",
+					showNextAndPrevButtonsInController:"no",
+					showRewindButton:"no",					<!-- Playback -->					
+					showPlaybackRateButton:"yes",
+					showVolumeButton:"yes",
+					showTime:"yes",
+					showQualityButton:"yes",
+					showInfoButton:"yes",					<!-- Info -->
+					showDownloadButton:"no",				<!-- Download -->
+					showShareButton:"no",					<!-- Bagikan -->
+					showEmbedButton:"yes",					<!-- Iframe -->
+					showChromecastButton:"no",
+					showFullScreenButton:"yes",
+					disableVideoScrubber:"no",
+					showScrubberWhenControllerIsHidden:"yes",
+					showMainScrubberToolTipLabel:"yes",
+					showDefaultControllerForVimeo:"yes",
+					repeatBackground:"no",
+					controllerHeight:42,
+					controllerHideDelay:3,
+					startSpaceBetweenButtons:10,
+					spaceBetweenButtons:10,
+					scrubbersOffsetWidth:2,
+					mainScrubberOffestTop:16,
+					timeOffsetLeftWidth:2,
+					timeOffsetRightWidth:3,
+					timeOffsetTop:0,
+					volumeScrubberHeight:80,
+					volumeScrubberOfsetHeight:12,
+					timeColor:"#bdbdbd",
+					youtubeQualityButtonNormalColor:"#bdbdbd",
+					youtubeQualityButtonSelectedColor:"#FFFFFF",
+					scrubbersToolTipLabelBackgroundColor:"#FFFFFF",
+					scrubbersToolTipLabelFontColor:"#5a5a5a",
+					
+					//advertisement on pause window
+					
+					aopwTitle:"Advertisement",
+					aopwWidth:400,
+					aopwHeight:240,
+					aopwBorderSize:6,
+					aopwTitleColor:"#FFFFFF",
+					
+					//subtitle
+					
+					subtitlesOffLabel:"Subtitle off",
+					//popup add windows
+					showPopupAdsCloseButton:"yes",
+					
+					//embed window and info window
+					
+					embedAndInfoWindowCloseButtonMargins:15,
+					borderColor:"#333333",
+					mainLabelsColor:"#FFFFFF",
+					secondaryLabelsColor:"#bdbdbd",
+					shareAndEmbedTextColor:"#5a5a5a",
+					inputBackgroundColor:"#000000",
+					inputColor:"#FFFFFF",
+					
+					//login
+					
+		            playIfLoggedIn:"no",
+		            playIfLoggedInMessage:"Please <a href='https://google.com' target='_blank'>login</a> to play this video.",
+					
+					//audio visualizer
+					
+					audioVisualizerLinesColor:"#0099FF",
+					audioVisualizerCircleColor:"#FFFFFF",
+					
+					//lightbox settings
+					
+					closeLightBoxWhenPlayComplete:"no",
+					lightBoxBackgroundOpacity:.6,
+					lightBoxBackgroundColor:"#000000",
+					
+					//sticky on scroll
+					
+					stickyOnScroll:"no",
+					stickyOnScrollShowOpener:"yes",
+					stickyOnScrollWidth:"700",
+					stickyOnScrollHeight:"394",
+					
+					//sticky display settings
+					
+					showOpener:"yes",
+					showOpenerPlayPauseButton:"yes",
+					verticalPosition:"bottom",
+					horizontalPosition:"center",
+					showPlayerByDefault:"yes",
+					animatePlayer:"yes",
+					openerAlignment:"right",
+					mainBackgroundImagePath:"content/minimal_skin_dark/main-background.png",
+					openerEqulizerOffsetTop:-1,
+					openerEqulizerOffsetLeft:3,
+					offsetX:0,
+					offsetY:0,
+					
+					//playback rate / speed
+					
+					defaultPlaybackRate:1, //0.25, 0.5, 1, 1.25, 1.2, 2
+					
+					//cuepoints
+					
+					executeCuepointsOnlyOnce:"no",
+					
+					//annotations
+					
+					showAnnotationsPositionTool:"no",
+					
+					//ads
+					
+					openNewPageAtTheEndOfTheAds:"no",
+					adsButtonsPosition:"left",
+					skipToVideoText:"You can skip to video in: ",
+					skipToVideoButtonText:"Skip Ad",
+					adsTextNormalColor:"#bdbdbd",
+					adsTextSelectedColor:"#FFFFFF",
+					adsBorderNormalColor:"#444444",
+					adsBorderSelectedColor:"#FFFFFF",
+					
+					//a to b loop
+					
+					useAToB:"yes",
+					atbTimeBackgroundColor:"transparent",
+					atbTimeTextColorNormal:"#888888",
+					atbTimeTextColorSelected:"#FFFFFF",
+					atbButtonTextNormalColor:"#888888",
+					atbButtonTextSelectedColor:"#FFFFFF",
+					atbButtonBackgroundNormalColor:"#FFFFFF",
+					atbButtonBackgroundSelectedColor:"#000000",
+					
+					//thumbnails preview
+					
+					thumbnailsPreviewWidth:196,
+					thumbnailsPreviewHeight:110,
+					thumbnailsPreviewBackgroundColor:"#000000",
+					thumbnailsPreviewBorderColor:"#666",
+					thumbnailsPreviewLabelBackgroundColor:"#666",
+					thumbnailsPreviewLabelFontColor:"#FFF",
+					
+					// context menu
+					
+					showContextmenu:'no',					<!-- Klik kanan -->
+					showScriptDeveloper:"no",
+					contextMenuBackgroundColor:"#1f1f1f",
+					contextMenuBorderColor:"#1f1f1f",
+					contextMenuSpacerColor:"#333",
+					contextMenuItemNormalColor:"#666666",
+					contextMenuItemSelectedColor:"#FFFFFF",
+					contextMenuItemDisabledColor:"#333"
+				});
+			});
+			
+		</script>
+		
+	</head>
+
+	<body style="background-color:#999999">	
+	
+		<div id="myDiv" style="position:relative; left:0px; top:0px;"></div>
+		
+		<!--  Playlists -->
+			<ul id="playlists" style="display:none;">
+				<li data-source="playlist1" data-playlist-name="MY RealTv" data-thumbnail-path="content/thumbnails/p-html.jpg">
+					<p class="fwduvp-categories-title"><span class="fwduvp-header">Title: </span><span class="fwduvp-title">My HTML playlist</span></p>
+					<p class="fwduvp-categories-type"><span class="fwduvp-header">Type: </span>HTML</p>
+					<p class="fwduvp-categories-description"><span class="fwduvp-header">Description: </span>Created using <strong>HTML markup</strong>, all format are supported and it can have mixed video formats.</p>
+				</li>
+			</ul>
+			
+
+			<!-- Playlist MY RealTv -->
+			<ul id="playlist1" style="display:none;">
+
+<!----  Ivan  --------------------------------------------------------------------------------->
+<!----  Movies Actor Tom Cruise  --------------------------------------------------------------------------------->
+				<!----  A Few Good Men --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Tom Cruise/A Few Good Men/afewgoodmen-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Tom Cruise/A Few Good Men/videos/afewgoodmen-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Tom Cruise/A Few Good Men/videos/afewgoodmen-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Tom Cruise/A Few Good Men/videos/afewgoodmen-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Tom Cruise/A Few Good Men/videos/afewgoodmen-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Tom Cruise/A Few Good Men/afewgoodmen-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Tom Cruise/A Few Good Men/afewgoodmen.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">A Few Good Men</p>
+							<p class="fwduvp-thumbnail-description">A Few Good Men computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Born On The Fourth Of July --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Tom Cruise/Born On The Fourth Of July/bornonthefourthofjuly-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Tom Cruise/Born On The Fourth Of July/videos/bornonthefourthofjuly-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Tom Cruise/Born On The Fourth Of July/videos/bornonthefourthofjuly-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Tom Cruise/Born On The Fourth Of July/videos/bornonthefourthofjuly-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Tom Cruise/Born On The Fourth Of July/videos/bornonthefourthofjuly-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Tom Cruise/Born On The Fourth Of July/bornonthefourthofjuly-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Tom Cruise/Born On The Fourth Of July/bornonthefourthofjuly.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Born On The Fourth Of July</p>
+							<p class="fwduvp-thumbnail-description">Born On The Fourth Of July computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Cocktail --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Tom Cruise/Cocktail/cocktail-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Tom Cruise/Cocktail/videos/cocktail-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Tom Cruise/Cocktail/videos/cocktail-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Tom Cruise/Cocktail/videos/cocktail-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Tom Cruise/Cocktail/videos/cocktail-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Tom Cruise/Cocktail/cocktail-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Tom Cruise/Cocktail/cocktail.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">A Few Good Men</p>
+							<p class="fwduvp-thumbnail-description">A Few Good Men computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Collateral --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Tom Cruise/Collateral/collateral-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Tom Cruise/Collateral/videos/collateral-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Tom Cruise/Collateral/videos/collateral-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Tom Cruise/Collateral/videos/collateral-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Tom Cruise/Collateral/videos/collateral-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Tom Cruise/Collateral/collateral-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Tom Cruise/Collateral/collateral.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Collateral</p>
+							<p class="fwduvp-thumbnail-description">Collateral computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Days Of Thunder --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Tom Cruise/Days Of Thunder/daysofthunder-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Tom Cruise/Days Of Thunder/videos/daysofthunder-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Tom Cruise/Days Of Thunder/videos/daysofthunder-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Tom Cruise/Days Of Thunder/videos/daysofthunder-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Tom Cruise/Days Of Thunder/videos/daysofthunder-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Tom Cruise/Days Of Thunder/daysofthunder-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Tom Cruise/Days Of Thunder/daysofthunder.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Days Of Thunder</p>
+							<p class="fwduvp-thumbnail-description">Days Of Thunder computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Edge Of Tomorrow --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Tom Cruise/Edge Of Tomorrow/edgeoftomorrow-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Tom Cruise/Edge Of Tomorrow/videos/edgeoftomorrow-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Tom Cruise/Edge Of Tomorrow/videos/edgeoftomorrow-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Tom Cruise/Edge Of Tomorrow/videos/edgeoftomorrow-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Tom Cruise/Edge Of Tomorrow/videos/edgeoftomorrow-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Tom Cruise/Edge Of Tomorrow/edgeoftomorrow-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Tom Cruise/Edge Of Tomorrow/edgeoftomorrow.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Edge Of Tomorrow</p>
+							<p class="fwduvp-thumbnail-description">Edge Of Tomorrow computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Far And Away --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Tom Cruise/Far And Away/farandaway-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Tom Cruise/Far And Away/videos/farandaway-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Tom Cruise/Far And Away/videos/farandaway-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Tom Cruise/Far And Away/videos/farandaway-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Tom Cruise/Far And Away/videos/farandaway-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Tom Cruise/Far And Away/farandaway-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Tom Cruise/Far And Away/farandaway.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Far And Away</p>
+							<p class="fwduvp-thumbnail-description">Far And Away computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Jack Reacher --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Tom Cruise/Jack Reacher/jackreacher-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Tom Cruise/Jack Reacher/videos/jackreacher-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Tom Cruise/Jack Reacher/videos/jackreacher-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Tom Cruise/Jack Reacher/videos/jackreacher-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Tom Cruise/Jack Reacher/videos/jackreacher-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Tom Cruise/Jack Reacher/jackreacher-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Tom Cruise/Jack Reacher/jackreacher.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Jack Reacher</p>
+							<p class="fwduvp-thumbnail-description">Jack Reacher computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Lions For Lambs --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Tom Cruise/Lions For Lambs/lionsforlambs-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Tom Cruise/Lions For Lambs/videos/lionsforlambs-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Tom Cruise/Lions For Lambs/videos/lionsforlambs-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Tom Cruise/Lions For Lambs/videos/lionsforlambs-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Tom Cruise/Lions For Lambs/videos/lionsforlambs-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Tom Cruise/Lions For Lambs/lionsforlambs-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Tom Cruise/Lions For Lambs/lionsforlambs.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Lions For Lambs</p>
+							<p class="fwduvp-thumbnail-description">Lions For Lambs computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Minority Report --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Tom Cruise/Minority Report/minorityreport-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Tom Cruise/Minority Report/videos/minorityreport-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Tom Cruise/Minority Report/videos/minorityreport-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Tom Cruise/Minority Report/videos/minorityreport-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Tom Cruise/Minority Report/videos/minorityreport-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Tom Cruise/Minority Report/minorityreport-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Tom Cruise/Minority Report/minorityreport.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Minority Report</p>
+							<p class="fwduvp-thumbnail-description">Minority Report computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Oblivion --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Tom Cruise/Oblivion/oblivion-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Tom Cruise/Oblivion/videos/oblivion-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Tom Cruise/Oblivion/videos/oblivion-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Tom Cruise/Oblivion/videos/oblivion-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Tom Cruise/Oblivion/videos/oblivion-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Tom Cruise/Oblivion/oblivion-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Tom Cruise/Oblivion/oblivion.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Oblivion</p>
+							<p class="fwduvp-thumbnail-description">Oblivion computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Risky Business --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Tom Cruise/Risky Business/riskybusiness-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Tom Cruise/Risky Business/videos/riskybusiness-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Tom Cruise/Risky Business/videos/riskybusiness-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Tom Cruise/Risky Business/videos/riskybusiness-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Tom Cruise/Risky Business/videos/riskybusiness-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Tom Cruise/Risky Business/riskybusiness-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Tom Cruise/Risky Business/riskybusiness.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Risky Business</p>
+							<p class="fwduvp-thumbnail-description">Risky Business computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  The Firm --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Tom Cruise/The Firm/thefirm-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Tom Cruise/The Firm/videos/thefirm-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Tom Cruise/The Firm/videos/thefirm-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Tom Cruise/The Firm/videos/thefirm-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Tom Cruise/The Firm/videos/thefirm-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Tom Cruise/The Firm/thefirm-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Tom Cruise/The Firm/thefirm.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">The Firm</p>
+							<p class="fwduvp-thumbnail-description">The Firm computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  The Last Samurai --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Tom Cruise/The Last Samurai/thelastsamurai-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Tom Cruise/The Last Samurai/videos/thelastsamurai-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Tom Cruise/The Last Samurai/videos/thelastsamurai-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Tom Cruise/The Last Samurai/videos/thelastsamurai-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Tom Cruise/The Last Samurai/videos/thelastsamurai-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Tom Cruise/The Last Samurai/thelastsamurai-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Tom Cruise/The Last Samurai/thelastsamurai.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">The Last Samurai</p>
+							<p class="fwduvp-thumbnail-description">The Last Samurai computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Top Gun --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Tom Cruise/Top Gun/topgun-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Tom Cruise/Top Gun/videos/topgun-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Tom Cruise/Top Gun/videos/topgun-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Tom Cruise/Top Gun/videos/topgun-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Tom Cruise/Top Gun/videos/topgun-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Tom Cruise/Top Gun/topgun-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Tom Cruise/Top Gun/topgun.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Top Gun</p>
+							<p class="fwduvp-thumbnail-description">Top Gun computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Vanilla Sky --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Tom Cruise/Vanilla Sky/vanillasky-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Tom Cruise/Vanilla Sky/videos/vanillasky-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Tom Cruise/Vanilla Sky/videos/vanillasky-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Tom Cruise/Vanilla Sky/videos/vanillasky-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Tom Cruise/Vanilla Sky/videos/vanillasky-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Tom Cruise/Vanilla Sky/vanillasky-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Tom Cruise/Vanilla Sky/vanillasky.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Vanilla Sky</p>
+							<p class="fwduvp-thumbnail-description">Vanilla Sky computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  War Of The Worlds --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Tom Cruise/War Of The Worlds/waroftheworlds-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Tom Cruise/War Of The Worlds/videos/waroftheworlds-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Tom Cruise/War Of The Worlds/videos/waroftheworlds-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Tom Cruise/War Of The Worlds/videos/waroftheworlds-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Tom Cruise/War Of The Worlds/videos/waroftheworlds-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Tom Cruise/War Of The Worlds/waroftheworlds-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Tom Cruise/War Of The Worlds/waroftheworlds.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">War Of The Worlds</p>
+							<p class="fwduvp-thumbnail-description">War Of The Worlds computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+<!---- END --------------------------------------------------------------------------------->
+				
+			</ul>		
+	</body>
+</html>
+
+
+
+
+

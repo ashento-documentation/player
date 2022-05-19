@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>RealTv</title>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1 user-scalable=no" />
+		
+		<link rel="stylesheet" type="text/css"  href="content/global.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+		
+		<script type="text/javascript" src="java/FWDUVPlayer.js"></script>
+		
+		<!-- Setup video player-->
+		<script type="text/javascript">
+			FWDUVPUtils.onReady(function(){
+				
+				new FWDUVPlayer({	
+					
+					//main settings
+					
+					instanceName:"player1",
+					parentId:"myDiv",
+					playlistsId:"playlists",
+					mainFolderPath:"content",
+					skinPath:"classic_skin_dark",
+					displayType:"responsive",
+					initializeOnlyWhenVisible:"no",
+					useVectorIcons:"no",
+					fillEntireVideoScreen:"no",
+					fillEntireposterScreen:"yes",
+					goFullScreenOnButtonPlay:"no",
+					playsinline:"yes",
+					privateVideoPassword:"428c841430ea18a70f7b06525d4b748a",
+					youtubeAPIKey:"",
+					useHEXColorsForSkin:"no",
+					normalHEXButtonsColor:"#666666",
+					googleAnalyticsTrackingCode:"",
+					useResumeOnPlay:"no",
+					useDeepLinking:"yes",
+					showPreloader:"yes",
+					preloaderBackgroundColor:"#000000",
+					preloaderFillColor:"#FFFFFF",
+					addKeyboardSupport:"yes",
+					autoScale:"yes",
+					showButtonsToolTip:"yes", 
+					stopVideoWhenPlayComplete:"no",
+					playAfterVideoStop:"no",
+					autoPlay:"no",
+					autoPlayText:"Click To Unmute",
+					loop:"no",
+					shuffle:"no",
+					showErrorInfo:"yes",
+					maxWidth:980,
+					maxHeight:552,
+					volume:.8,
+					rewindTime:10,
+					buttonsToolTipHideDelay:1.5,
+					backgroundColor:"#000000",
+					videoBackgroundColor:"#000000",
+					posterBackgroundColor:"#000000",
+					buttonsToolTipFontColor:"#5a5a5a",
+					
+					//logo settings
+					
+					showLogo:"yes",
+					logoPath:"",
+					hideLogoWithController:"yes",
+					logoPosition:"topRight",
+					logoLink:"http://www.webdesign-flash.ro/",
+					logoPath:"",
+					logoMargins:10,
+					
+					//playlists/categories settings
+					
+					showPlaylistsSearchInput:"yes",
+					usePlaylistsSelectBox:"yes",
+					showPlaylistsButtonAndPlaylists:"yes",
+					showPlaylistsByDefault:"no",
+					thumbnailSelectedType:"opacity",
+					startAtPlaylist:0,
+					buttonsMargins:15,
+					thumbnailMaxWidth:350, 
+					thumbnailMaxHeight:350,
+					horizontalSpaceBetweenThumbnails:40,
+					verticalSpaceBetweenThumbnails:40,
+					inputBackgroundColor:"#333333",
+					inputColor:"#999999",
+					
+					//playlist settings
+					
+					showPlaylistButtonAndPlaylist:"yes",					<!-- Tombol Playlist -->
+					playlistPosition:"right",
+					showPlaylistByDefault:"yes",
+					showPlaylistName:"yes",
+					showSearchInput:"yes",
+					showLoopButton:"yes",
+					showShuffleButton:"yes",
+					showPlaylistOnFullScreen:"no",
+					showNextAndPrevButtons:"yes",
+					showThumbnail:"yes",
+					showOnlyThumbnail:"no",
+					forceDisableDownloadButtonForFolder:"yes",
+					addMouseWheelSupport:"yes", 
+					startAtRandomVideo:"no",
+					stopAfterLastVideoHasPlayed:"no",
+					addScrollOnMouseMove:"no",
+					randomizePlaylist:'no',
+					folderVideoLabel:"VIDEO ",
+					playlistRightWidth:310,
+					playlistBottomHeight:380,
+					startAtVideo:0,
+					maxPlaylistItems:1000,									<!-- Jumlah Playlist -->
+					thumbnailWidth:71,
+					thumbnailHeight:71,
+					spaceBetweenControllerAndPlaylist:1,
+					spaceBetweenThumbnails:1,
+					scrollbarOffestWidth:10,
+					scollbarSpeedSensitivity:.5,
+					playlistBackgroundColor:"#000000",
+					playlistNameColor:"#FFFFFF",
+					thumbnailNormalBackgroundColor:"#1b1b1b",
+					thumbnailHoverBackgroundColor:"#313131",
+					thumbnailDisabledBackgroundColor:"#272727",
+					searchInputBackgroundColor:"#000000",
+					searchInputColor:"#bdbdbd",
+					youtubeAndFolderVideoTitleColor:"#FFFFFF",
+					folderAudioSecondTitleColor:"#999999",
+					youtubeOwnerColor:"#bdbdbd",
+					youtubeDescriptionColor:"#bdbdbd",
+					mainSelectorBackgroundSelectedColor:"#FFFFFF",
+					mainSelectorTextNormalColor:"#FFFFFF",
+					mainSelectorTextSelectedColor:"#000000",
+					mainButtonBackgroundNormalColor:"#212021",
+					mainButtonBackgroundSelectedColor:"#FFFFFF",
+					mainButtonTextNormalColor:"#FFFFFF",
+					mainButtonTextSelectedColor:"#000000",
+					
+					//controller settings
+					
+					showController:"yes",					<!-- Tampilan Pengaturan -->
+					showControllerWhenVideoIsStopped:"yes",
+					showNextAndPrevButtonsInController:"no",
+					showRewindButton:"no",					<!-- Playback -->					
+					showPlaybackRateButton:"yes",
+					showVolumeButton:"yes",
+					showTime:"yes",
+					showQualityButton:"yes",
+					showInfoButton:"yes",					<!-- Info -->
+					showDownloadButton:"no",				<!-- Download -->
+					showShareButton:"no",					<!-- Bagikan -->
+					showEmbedButton:"yes",					<!-- Iframe -->
+					showChromecastButton:"no",
+					showFullScreenButton:"yes",
+					disableVideoScrubber:"no",
+					showScrubberWhenControllerIsHidden:"yes",
+					showMainScrubberToolTipLabel:"yes",
+					showDefaultControllerForVimeo:"yes",
+					repeatBackground:"no",
+					controllerHeight:42,
+					controllerHideDelay:3,
+					startSpaceBetweenButtons:10,
+					spaceBetweenButtons:10,
+					scrubbersOffsetWidth:2,
+					mainScrubberOffestTop:16,
+					timeOffsetLeftWidth:2,
+					timeOffsetRightWidth:3,
+					timeOffsetTop:0,
+					volumeScrubberHeight:80,
+					volumeScrubberOfsetHeight:12,
+					timeColor:"#bdbdbd",
+					youtubeQualityButtonNormalColor:"#bdbdbd",
+					youtubeQualityButtonSelectedColor:"#FFFFFF",
+					scrubbersToolTipLabelBackgroundColor:"#FFFFFF",
+					scrubbersToolTipLabelFontColor:"#5a5a5a",
+					
+					//advertisement on pause window
+					
+					aopwTitle:"Advertisement",
+					aopwWidth:400,
+					aopwHeight:240,
+					aopwBorderSize:6,
+					aopwTitleColor:"#FFFFFF",
+					
+					//subtitle
+					
+					subtitlesOffLabel:"Subtitle off",
+					//popup add windows
+					showPopupAdsCloseButton:"yes",
+					
+					//embed window and info window
+					
+					embedAndInfoWindowCloseButtonMargins:15,
+					borderColor:"#333333",
+					mainLabelsColor:"#FFFFFF",
+					secondaryLabelsColor:"#bdbdbd",
+					shareAndEmbedTextColor:"#5a5a5a",
+					inputBackgroundColor:"#000000",
+					inputColor:"#FFFFFF",
+					
+					//login
+					
+		            playIfLoggedIn:"no",
+		            playIfLoggedInMessage:"Please <a href='https://google.com' target='_blank'>login</a> to play this video.",
+					
+					//audio visualizer
+					
+					audioVisualizerLinesColor:"#0099FF",
+					audioVisualizerCircleColor:"#FFFFFF",
+					
+					//lightbox settings
+					
+					closeLightBoxWhenPlayComplete:"no",
+					lightBoxBackgroundOpacity:.6,
+					lightBoxBackgroundColor:"#000000",
+					
+					//sticky on scroll
+					
+					stickyOnScroll:"no",
+					stickyOnScrollShowOpener:"yes",
+					stickyOnScrollWidth:"700",
+					stickyOnScrollHeight:"394",
+					
+					//sticky display settings
+					
+					showOpener:"yes",
+					showOpenerPlayPauseButton:"yes",
+					verticalPosition:"bottom",
+					horizontalPosition:"center",
+					showPlayerByDefault:"yes",
+					animatePlayer:"yes",
+					openerAlignment:"right",
+					mainBackgroundImagePath:"content/minimal_skin_dark/main-background.png",
+					openerEqulizerOffsetTop:-1,
+					openerEqulizerOffsetLeft:3,
+					offsetX:0,
+					offsetY:0,
+					
+					//playback rate / speed
+					
+					defaultPlaybackRate:1, //0.25, 0.5, 1, 1.25, 1.2, 2
+					
+					//cuepoints
+					
+					executeCuepointsOnlyOnce:"no",
+					
+					//annotations
+					
+					showAnnotationsPositionTool:"no",
+					
+					//ads
+					
+					openNewPageAtTheEndOfTheAds:"no",
+					adsButtonsPosition:"left",
+					skipToVideoText:"You can skip to video in: ",
+					skipToVideoButtonText:"Skip Ad",
+					adsTextNormalColor:"#bdbdbd",
+					adsTextSelectedColor:"#FFFFFF",
+					adsBorderNormalColor:"#444444",
+					adsBorderSelectedColor:"#FFFFFF",
+					
+					//a to b loop
+					
+					useAToB:"yes",
+					atbTimeBackgroundColor:"transparent",
+					atbTimeTextColorNormal:"#888888",
+					atbTimeTextColorSelected:"#FFFFFF",
+					atbButtonTextNormalColor:"#888888",
+					atbButtonTextSelectedColor:"#FFFFFF",
+					atbButtonBackgroundNormalColor:"#FFFFFF",
+					atbButtonBackgroundSelectedColor:"#000000",
+					
+					//thumbnails preview
+					
+					thumbnailsPreviewWidth:196,
+					thumbnailsPreviewHeight:110,
+					thumbnailsPreviewBackgroundColor:"#000000",
+					thumbnailsPreviewBorderColor:"#666",
+					thumbnailsPreviewLabelBackgroundColor:"#666",
+					thumbnailsPreviewLabelFontColor:"#FFF",
+					
+					// context menu
+					
+					showContextmenu:'no',					<!-- Klik kanan -->
+					showScriptDeveloper:"no",
+					contextMenuBackgroundColor:"#1f1f1f",
+					contextMenuBorderColor:"#1f1f1f",
+					contextMenuSpacerColor:"#333",
+					contextMenuItemNormalColor:"#666666",
+					contextMenuItemSelectedColor:"#FFFFFF",
+					contextMenuItemDisabledColor:"#333"
+				});
+			});
+			
+		</script>
+		
+	</head>
+
+	<body style="background-color:#999999">	
+	
+		<div id="myDiv" style="position:relative; left:0px; top:0px;"></div>
+		
+		<!--  Playlists -->
+			<ul id="playlists" style="display:none;">
+				<li data-source="playlist1" data-playlist-name="MY RealTv" data-thumbnail-path="content/thumbnails/p-html.jpg">
+					<p class="fwduvp-categories-title"><span class="fwduvp-header">Title: </span><span class="fwduvp-title">My HTML playlist</span></p>
+					<p class="fwduvp-categories-type"><span class="fwduvp-header">Type: </span>HTML</p>
+					<p class="fwduvp-categories-description"><span class="fwduvp-header">Description: </span>Created using <strong>HTML markup</strong>, all format are supported and it can have mixed video formats.</p>
+				</li>
+			</ul>
+			
+
+			<!-- Playlist MY RealTv -->
+			<ul id="playlist1" style="display:none;">
+
+<!----  Ivan  --------------------------------------------------------------------------------->
+<!----  Perang Dunia 1  --------------------------------------------------------------------------------->
+				<!----  1917 --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Film Perang Dunia 1/1917/1917-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Film Perang Dunia 1/1917/videos/1917-240p.mp4', label:'small version'}, {source:'content/realtv/Film Perang Dunia 1/1917/videos/1917-360p.mp4', label:'sd360'},{source:'content/realtv/Film Perang Dunia 1/1917/videos/1917-480p.mp4', label:'hd480'},{source:'content/realtv/Film Perang Dunia 1/1917/videos/1917-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Film Perang Dunia 1/1917/1917-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Film Perang Dunia 1/1917/1917.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">1917</p>
+							<p class="fwduvp-thumbnail-description">1917 computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  All Quiet on the Western Front (1930) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Film Perang Dunia 1/all quiet on the western front/all quiet on the western front-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Film Perang Dunia 1/all quiet on the western front/videos/all quiet on the western front-240p.mp4', label:'small version'}, {source:'content/realtv/Film Perang Dunia 1/all quiet on the western front/videos/all quiet on the western front-360p.mp4', label:'sd360'},{source:'content/realtv/Film Perang Dunia 1/all quiet on the western front/videos/all quiet on the western front-480p.mp4', label:'hd480'},{source:'content/realtv/Film Perang Dunia 1/all quiet on the western front/videos/all quiet on the western front-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Film Perang Dunia 1/all quiet on the western front/all quiet on the western front-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Film Perang Dunia 1/all quiet on the western front/all quiet on the western front.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">All Quiet on the Western Front (1930)</p>
+							<p class="fwduvp-thumbnail-description">All Quiet on the Western Front (1930) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Flyboys (2006) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Film Perang Dunia 1/flyboys/flyboys-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Film Perang Dunia 1/flyboys/videos/flyboys-240p.mp4', label:'small version'}, {source:'content/realtv/Film Perang Dunia 1/flyboys/videos/flyboys-360p.mp4', label:'sd360'},{source:'content/realtv/Film Perang Dunia 1/flyboys/videos/flyboys-480p.mp4', label:'hd480'},{source:'content/realtv/Film Perang Dunia 1/flyboys/videos/flyboys-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Film Perang Dunia 1/flyboys/flyboys-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Film Perang Dunia 1/flyboys/flyboys.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Flyboys (2006)</p>
+							<p class="fwduvp-thumbnail-description">Flyboys (2006) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Gallipoli (1981) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Film Perang Dunia 1/gallipoli/gallipoli-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Film Perang Dunia 1/gallipoli/videos/gallipoli-240p.mp4', label:'small version'}, {source:'content/realtv/Film Perang Dunia 1/gallipoli/videos/gallipoli-360p.mp4', label:'sd360'},{source:'content/realtv/Film Perang Dunia 1/gallipoli/videos/gallipoli-480p.mp4', label:'hd480'},{source:'content/realtv/Film Perang Dunia 1/gallipoli/videos/gallipoli-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Film Perang Dunia 1/gallipoli/gallipoli-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Film Perang Dunia 1/gallipoli/gallipoli.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Gallipoli (1981)</p>
+							<p class="fwduvp-thumbnail-description">Gallipoli (1981) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Greyhound (2020) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Film Perang Dunia 1/greyhound/greyhound-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Film Perang Dunia 1/greyhound/videos/greyhound-240p.mp4', label:'small version'}, {source:'content/realtv/Film Perang Dunia 1/greyhound/videos/greyhound-360p.mp4', label:'sd360'},{source:'content/realtv/Film Perang Dunia 1/greyhound/videos/greyhound-480p.mp4', label:'hd480'},{source:'content/realtv/Film Perang Dunia 1/greyhound/videos/greyhound-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Film Perang Dunia 1/greyhound/greyhound-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Film Perang Dunia 1/greyhound/greyhound.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Greyhound (2020)</p>
+							<p class="fwduvp-thumbnail-description">Greyhound (2020) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Inglourious Basterds (2009) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Film Perang Dunia 1/inglourious basterds/inglourious basterds-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Film Perang Dunia 1/inglourious basterds/videos/inglourious basterds-240p.mp4', label:'small version'}, {source:'content/realtv/Film Perang Dunia 1/inglourious basterds/videos/inglourious basterds-360p.mp4', label:'sd360'},{source:'content/realtv/Film Perang Dunia 1/inglourious basterds/videos/inglourious basterds-480p.mp4', label:'hd480'},{source:'content/realtv/Film Perang Dunia 1/inglourious basterds/videos/inglourious basterds-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Film Perang Dunia 1/inglourious basterds/inglourious basterds-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Film Perang Dunia 1/inglourious basterds/inglourious basterds.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Inglourious Basterds (2009)</p>
+							<p class="fwduvp-thumbnail-description">Inglourious Basterds (2009) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Johnny Got His Gun (1971) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Film Perang Dunia 1/johnny got his gun/johnny got his gun-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Film Perang Dunia 1/johnny got his gun/videos/johnny got his gun-240p.mp4', label:'small version'}, {source:'content/realtv/Film Perang Dunia 1/johnny got his gun/videos/johnny got his gun-360p.mp4', label:'sd360'},{source:'content/realtv/Film Perang Dunia 1/johnny got his gun/videos/johnny got his gun-480p.mp4', label:'hd480'},{source:'content/realtv/Film Perang Dunia 1/johnny got his gun/videos/johnny got his gun-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Film Perang Dunia 1/johnny got his gun/johnny got his gun-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Film Perang Dunia 1/johnny got his gun/johnny got his gun.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Johnny Got His Gun (1971)</p>
+							<p class="fwduvp-thumbnail-description">Johnny Got His Gun (1971) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Journey's End (2017) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Film Perang Dunia 1/journeys end/journeys end-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Film Perang Dunia 1/journeys end/videos/journeys end-240p.mp4', label:'small version'}, {source:'content/realtv/Film Perang Dunia 1/journeys end/videos/journeys end-360p.mp4', label:'sd360'},{source:'content/realtv/Film Perang Dunia 1/journeys end/videos/journeys end-480p.mp4', label:'hd480'},{source:'content/realtv/Film Perang Dunia 1/journeys end/videos/journeys end-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Film Perang Dunia 1/journeys end/journeys end-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Film Perang Dunia 1/journeys end/journeys end.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Journey's End (2017)</p>
+							<p class="fwduvp-thumbnail-description">Journey's End (2017) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Passchendaele 2008 --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Film Perang Dunia 1/passchendaele/passchendaele-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Film Perang Dunia 1/passchendaele/videos/passchendaele-240p.mp4', label:'small version'}, {source:'content/realtv/Film Perang Dunia 1/passchendaele/videos/passchendaele-360p.mp4', label:'sd360'},{source:'content/realtv/Film Perang Dunia 1/passchendaele/videos/passchendaele-480p.mp4', label:'hd480'},{source:'content/realtv/Film Perang Dunia 1/passchendaele/videos/passchendaele-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Film Perang Dunia 1/passchendaele/passchendaele-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Film Perang Dunia 1/passchendaele/passchendaele.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Passchendaele 2008</p>
+							<p class="fwduvp-thumbnail-description">Passchendaele 2008 computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Porco rosso (1992) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Film Perang Dunia 1/porco rosso/porco rosso-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Film Perang Dunia 1/porco rosso/videos/porco rosso-240p.mp4', label:'small version'}, {source:'content/realtv/Film Perang Dunia 1/porco rosso/videos/porco rosso-360p.mp4', label:'sd360'},{source:'content/realtv/Film Perang Dunia 1/porco rosso/videos/porco rosso-480p.mp4', label:'hd480'},{source:'content/realtv/Film Perang Dunia 1/porco rosso/videos/porco rosso-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Film Perang Dunia 1/porco rosso/porco rosso-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Film Perang Dunia 1/porco rosso/porco rosso.ass', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Porco rosso (1992)</p>
+							<p class="fwduvp-thumbnail-description">Porco rosso (1992) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Private Peaceful (2012) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Film Perang Dunia 1/private peaceful/private peaceful-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Film Perang Dunia 1/private peaceful/videos/private peaceful-240p.mp4', label:'small version'}, {source:'content/realtv/Film Perang Dunia 1/private peaceful/videos/private peaceful-360p.mp4', label:'sd360'},{source:'content/realtv/Film Perang Dunia 1/private peaceful/videos/private peaceful-480p.mp4', label:'hd480'},{source:'content/realtv/Film Perang Dunia 1/private peaceful/videos/private peaceful-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Film Perang Dunia 1/private peaceful/private peaceful-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Film Perang Dunia 1/private peaceful/private peaceful.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Private Peaceful (2012)</p>
+							<p class="fwduvp-thumbnail-description">Private Peaceful (2012) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Sergeant York (1941) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Film Perang Dunia 1/sergeant york/sergeant york-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Film Perang Dunia 1/sergeant york/videos/sergeant york-240p.mp4', label:'small version'}, {source:'content/realtv/Film Perang Dunia 1/sergeant york/videos/sergeant york-360p.mp4', label:'sd360'},{source:'content/realtv/Film Perang Dunia 1/sergeant york/videos/sergeant york-480p.mp4', label:'hd480'},{source:'content/realtv/Film Perang Dunia 1/sergeant york/videos/sergeant york-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Film Perang Dunia 1/sergeant york/sergeant york-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Film Perang Dunia 1/sergeant york/sergeant york.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Sergeant York (1941)</p>
+							<p class="fwduvp-thumbnail-description">Sergeant York (1941) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Sunset [Napszállta] (2018) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Film Perang Dunia 1/sunset/sunset-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Film Perang Dunia 1/sunset/videos/sunset-240p.mp4', label:'small version'}, {source:'content/realtv/Film Perang Dunia 1/sunset/videos/sunset-360p.mp4', label:'sd360'},{source:'content/realtv/Film Perang Dunia 1/sunset/videos/sunset-480p.mp4', label:'hd480'},{source:'content/realtv/Film Perang Dunia 1/sunset/videos/sunset-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Film Perang Dunia 1/sunset/sunset-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Film Perang Dunia 1/sunset/sunset.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Sunset [Napszállta] (2018)</p>
+							<p class="fwduvp-thumbnail-description">Sunset [Napszállta] (2018) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Testament of Youth (2014) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Film Perang Dunia 1/testament of youth/testament of youth-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Film Perang Dunia 1/testament of youth/videos/testament of youth-240p.mp4', label:'small version'}, {source:'content/realtv/Film Perang Dunia 1/testament of youth/videos/testament of youth-360p.mp4', label:'sd360'},{source:'content/realtv/Film Perang Dunia 1/testament of youth/videos/testament of youth-480p.mp4', label:'hd480'},{source:'content/realtv/Film Perang Dunia 1/testament of youth/videos/testament of youth-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Film Perang Dunia 1/testament of youth/testament of youth-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Film Perang Dunia 1/testament of youth/testament of youth.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Testament of Youth (2014)</p>
+							<p class="fwduvp-thumbnail-description">Testament of Youth (2014) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  The Ottoman Lieutenant (2017) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Film Perang Dunia 1/the ottoman lieutenant/the ottoman lieutenant-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Film Perang Dunia 1/the ottoman lieutenant/videos/the ottoman lieutenant-240p.mp4', label:'small version'}, {source:'content/realtv/Film Perang Dunia 1/the ottoman lieutenant/videos/the ottoman lieutenant-360p.mp4', label:'sd360'},{source:'content/realtv/Film Perang Dunia 1/the ottoman lieutenant/videos/the ottoman lieutenant-480p.mp4', label:'hd480'},{source:'content/realtv/Film Perang Dunia 1/the ottoman lieutenant/videos/the ottoman lieutenant-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Film Perang Dunia 1/the ottoman lieutenant/the ottoman lieutenant-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Film Perang Dunia 1/the ottoman lieutenant/the ottoman lieutenant.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">The Ottoman Lieutenant (2017)</p>
+							<p class="fwduvp-thumbnail-description">The Ottoman Lieutenant (2017) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  The White Ribbon (2009) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Film Perang Dunia 1/the white ribbon/the white ribbon-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Film Perang Dunia 1/the white ribbon/videos/the white ribbon-240p.mp4', label:'small version'}, {source:'content/realtv/Film Perang Dunia 1/the white ribbon/videos/the white ribbon-360p.mp4', label:'sd360'},{source:'content/realtv/Film Perang Dunia 1/the white ribbon/videos/the white ribbon-480p.mp4', label:'hd480'},{source:'content/realtv/Film Perang Dunia 1/the white ribbon/videos/the white ribbon-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Film Perang Dunia 1/the white ribbon/the white ribbon-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Film Perang Dunia 1/the white ribbon/the white ribbon.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">The White Ribbon (2009)</p>
+							<p class="fwduvp-thumbnail-description">The White Ribbon (2009) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  They Shall Not Grow Old (2018) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Film Perang Dunia 1/they shall not grow old/they shall not grow old-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Film Perang Dunia 1/they shall not grow old/videos/they shall not grow old-240p.mp4', label:'small version'}, {source:'content/realtv/Film Perang Dunia 1/they shall not grow old/videos/they shall not grow old-360p.mp4', label:'sd360'},{source:'content/realtv/Film Perang Dunia 1/they shall not grow old/videos/they shall not grow old-480p.mp4', label:'hd480'},{source:'content/realtv/Film Perang Dunia 1/they shall not grow old/videos/they shall not grow old-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Film Perang Dunia 1/they shall not grow old/they shall not grow old-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Film Perang Dunia 1/they shall not grow old/they shall not grow old.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">They Shall Not Grow Old (2018)</p>
+							<p class="fwduvp-thumbnail-description">They Shall Not Grow Old (2018) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Tolkien 2019 --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Film Perang Dunia 1/tolkien/tolkien-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Film Perang Dunia 1/tolkien/videos/tolkien-240p.mp4', label:'small version'}, {source:'content/realtv/Film Perang Dunia 1/tolkien/videos/tolkien-360p.mp4', label:'sd360'},{source:'content/realtv/Film Perang Dunia 1/tolkien/videos/tolkien-480p.mp4', label:'hd480'},{source:'content/realtv/Film Perang Dunia 1/tolkien/videos/tolkien-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Film Perang Dunia 1/tolkien/tolkien-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Film Perang Dunia 1/tolkien/tolkien.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Tolkien 2019</p>
+							<p class="fwduvp-thumbnail-description">Tolkien 2019 computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Wonder Woman 2017 --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Film Perang Dunia 1/wonder woman/wonder woman-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Film Perang Dunia 1/wonder woman/videos/wonder woman-240p.mp4', label:'small version'}, {source:'content/realtv/Film Perang Dunia 1/wonder woman/videos/wonder woman-360p.mp4', label:'sd360'},{source:'content/realtv/Film Perang Dunia 1/wonder woman/videos/wonder woman-480p.mp4', label:'hd480'},{source:'content/realtv/Film Perang Dunia 1/wonder woman/videos/wonder woman-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Film Perang Dunia 1/wonder woman/wonder woman-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Film Perang Dunia 1/wonder woman/wonder woman.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Wonder Woman 2017</p>
+							<p class="fwduvp-thumbnail-description">Wonder Woman 2017 computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+
+<!---- END --------------------------------------------------------------------------------->
+				
+			</ul>		
+	</body>
+</html>
+
+
+
+
+

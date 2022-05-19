@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>RealTv</title>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1 user-scalable=no" />
+		
+		<link rel="stylesheet" type="text/css"  href="content/global.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+		
+		<script type="text/javascript" src="java/FWDUVPlayer.js"></script>
+		
+		<!-- Setup video player-->
+		<script type="text/javascript">
+			FWDUVPUtils.onReady(function(){
+				
+				new FWDUVPlayer({	
+					
+					//main settings
+					
+					instanceName:"player1",
+					parentId:"myDiv",
+					playlistsId:"playlists",
+					mainFolderPath:"content",
+					skinPath:"classic_skin_dark",
+					displayType:"responsive",
+					initializeOnlyWhenVisible:"no",
+					useVectorIcons:"no",
+					fillEntireVideoScreen:"no",
+					fillEntireposterScreen:"yes",
+					goFullScreenOnButtonPlay:"no",
+					playsinline:"yes",
+					privateVideoPassword:"428c841430ea18a70f7b06525d4b748a",
+					youtubeAPIKey:"",
+					useHEXColorsForSkin:"no",
+					normalHEXButtonsColor:"#666666",
+					googleAnalyticsTrackingCode:"",
+					useResumeOnPlay:"no",
+					useDeepLinking:"yes",
+					showPreloader:"yes",
+					preloaderBackgroundColor:"#000000",
+					preloaderFillColor:"#FFFFFF",
+					addKeyboardSupport:"yes",
+					autoScale:"yes",
+					showButtonsToolTip:"yes", 
+					stopVideoWhenPlayComplete:"no",
+					playAfterVideoStop:"no",
+					autoPlay:"no",
+					autoPlayText:"Click To Unmute",
+					loop:"no",
+					shuffle:"no",
+					showErrorInfo:"yes",
+					maxWidth:980,
+					maxHeight:552,
+					volume:.8,
+					rewindTime:10,
+					buttonsToolTipHideDelay:1.5,
+					backgroundColor:"#000000",
+					videoBackgroundColor:"#000000",
+					posterBackgroundColor:"#000000",
+					buttonsToolTipFontColor:"#5a5a5a",
+					
+					//logo settings
+					
+					showLogo:"yes",
+					logoPath:"",
+					hideLogoWithController:"yes",
+					logoPosition:"topRight",
+					logoLink:"http://www.webdesign-flash.ro/",
+					logoPath:"",
+					logoMargins:10,
+					
+					//playlists/categories settings
+					
+					showPlaylistsSearchInput:"yes",
+					usePlaylistsSelectBox:"yes",
+					showPlaylistsButtonAndPlaylists:"yes",
+					showPlaylistsByDefault:"no",
+					thumbnailSelectedType:"opacity",
+					startAtPlaylist:0,
+					buttonsMargins:15,
+					thumbnailMaxWidth:350, 
+					thumbnailMaxHeight:350,
+					horizontalSpaceBetweenThumbnails:40,
+					verticalSpaceBetweenThumbnails:40,
+					inputBackgroundColor:"#333333",
+					inputColor:"#999999",
+					
+					//playlist settings
+					
+					showPlaylistButtonAndPlaylist:"yes",					<!-- Tombol Playlist -->
+					playlistPosition:"right",
+					showPlaylistByDefault:"yes",
+					showPlaylistName:"yes",
+					showSearchInput:"yes",
+					showLoopButton:"yes",
+					showShuffleButton:"yes",
+					showPlaylistOnFullScreen:"no",
+					showNextAndPrevButtons:"yes",
+					showThumbnail:"yes",
+					showOnlyThumbnail:"no",
+					forceDisableDownloadButtonForFolder:"yes",
+					addMouseWheelSupport:"yes", 
+					startAtRandomVideo:"no",
+					stopAfterLastVideoHasPlayed:"no",
+					addScrollOnMouseMove:"no",
+					randomizePlaylist:'no',
+					folderVideoLabel:"VIDEO ",
+					playlistRightWidth:310,
+					playlistBottomHeight:380,
+					startAtVideo:0,
+					maxPlaylistItems:1000,									<!-- Jumlah Playlist -->
+					thumbnailWidth:71,
+					thumbnailHeight:71,
+					spaceBetweenControllerAndPlaylist:1,
+					spaceBetweenThumbnails:1,
+					scrollbarOffestWidth:10,
+					scollbarSpeedSensitivity:.5,
+					playlistBackgroundColor:"#000000",
+					playlistNameColor:"#FFFFFF",
+					thumbnailNormalBackgroundColor:"#1b1b1b",
+					thumbnailHoverBackgroundColor:"#313131",
+					thumbnailDisabledBackgroundColor:"#272727",
+					searchInputBackgroundColor:"#000000",
+					searchInputColor:"#bdbdbd",
+					youtubeAndFolderVideoTitleColor:"#FFFFFF",
+					folderAudioSecondTitleColor:"#999999",
+					youtubeOwnerColor:"#bdbdbd",
+					youtubeDescriptionColor:"#bdbdbd",
+					mainSelectorBackgroundSelectedColor:"#FFFFFF",
+					mainSelectorTextNormalColor:"#FFFFFF",
+					mainSelectorTextSelectedColor:"#000000",
+					mainButtonBackgroundNormalColor:"#212021",
+					mainButtonBackgroundSelectedColor:"#FFFFFF",
+					mainButtonTextNormalColor:"#FFFFFF",
+					mainButtonTextSelectedColor:"#000000",
+					
+					//controller settings
+					
+					showController:"yes",					<!-- Tampilan Pengaturan -->
+					showControllerWhenVideoIsStopped:"yes",
+					showNextAndPrevButtonsInController:"no",
+					showRewindButton:"no",					<!-- Playback -->					
+					showPlaybackRateButton:"yes",
+					showVolumeButton:"yes",
+					showTime:"yes",
+					showQualityButton:"yes",
+					showInfoButton:"yes",					<!-- Info -->
+					showDownloadButton:"no",				<!-- Download -->
+					showShareButton:"no",					<!-- Bagikan -->
+					showEmbedButton:"yes",					<!-- Iframe -->
+					showChromecastButton:"no",
+					showFullScreenButton:"yes",
+					disableVideoScrubber:"no",
+					showScrubberWhenControllerIsHidden:"yes",
+					showMainScrubberToolTipLabel:"yes",
+					showDefaultControllerForVimeo:"yes",
+					repeatBackground:"no",
+					controllerHeight:42,
+					controllerHideDelay:3,
+					startSpaceBetweenButtons:10,
+					spaceBetweenButtons:10,
+					scrubbersOffsetWidth:2,
+					mainScrubberOffestTop:16,
+					timeOffsetLeftWidth:2,
+					timeOffsetRightWidth:3,
+					timeOffsetTop:0,
+					volumeScrubberHeight:80,
+					volumeScrubberOfsetHeight:12,
+					timeColor:"#bdbdbd",
+					youtubeQualityButtonNormalColor:"#bdbdbd",
+					youtubeQualityButtonSelectedColor:"#FFFFFF",
+					scrubbersToolTipLabelBackgroundColor:"#FFFFFF",
+					scrubbersToolTipLabelFontColor:"#5a5a5a",
+					
+					//advertisement on pause window
+					
+					aopwTitle:"Advertisement",
+					aopwWidth:400,
+					aopwHeight:240,
+					aopwBorderSize:6,
+					aopwTitleColor:"#FFFFFF",
+					
+					//subtitle
+					
+					subtitlesOffLabel:"Subtitle off",
+					//popup add windows
+					showPopupAdsCloseButton:"yes",
+					
+					//embed window and info window
+					
+					embedAndInfoWindowCloseButtonMargins:15,
+					borderColor:"#333333",
+					mainLabelsColor:"#FFFFFF",
+					secondaryLabelsColor:"#bdbdbd",
+					shareAndEmbedTextColor:"#5a5a5a",
+					inputBackgroundColor:"#000000",
+					inputColor:"#FFFFFF",
+					
+					//login
+					
+		            playIfLoggedIn:"no",
+		            playIfLoggedInMessage:"Please <a href='https://google.com' target='_blank'>login</a> to play this video.",
+					
+					//audio visualizer
+					
+					audioVisualizerLinesColor:"#0099FF",
+					audioVisualizerCircleColor:"#FFFFFF",
+					
+					//lightbox settings
+					
+					closeLightBoxWhenPlayComplete:"no",
+					lightBoxBackgroundOpacity:.6,
+					lightBoxBackgroundColor:"#000000",
+					
+					//sticky on scroll
+					
+					stickyOnScroll:"no",
+					stickyOnScrollShowOpener:"yes",
+					stickyOnScrollWidth:"700",
+					stickyOnScrollHeight:"394",
+					
+					//sticky display settings
+					
+					showOpener:"yes",
+					showOpenerPlayPauseButton:"yes",
+					verticalPosition:"bottom",
+					horizontalPosition:"center",
+					showPlayerByDefault:"yes",
+					animatePlayer:"yes",
+					openerAlignment:"right",
+					mainBackgroundImagePath:"content/minimal_skin_dark/main-background.png",
+					openerEqulizerOffsetTop:-1,
+					openerEqulizerOffsetLeft:3,
+					offsetX:0,
+					offsetY:0,
+					
+					//playback rate / speed
+					
+					defaultPlaybackRate:1, //0.25, 0.5, 1, 1.25, 1.2, 2
+					
+					//cuepoints
+					
+					executeCuepointsOnlyOnce:"no",
+					
+					//annotations
+					
+					showAnnotationsPositionTool:"no",
+					
+					//ads
+					
+					openNewPageAtTheEndOfTheAds:"no",
+					adsButtonsPosition:"left",
+					skipToVideoText:"You can skip to video in: ",
+					skipToVideoButtonText:"Skip Ad",
+					adsTextNormalColor:"#bdbdbd",
+					adsTextSelectedColor:"#FFFFFF",
+					adsBorderNormalColor:"#444444",
+					adsBorderSelectedColor:"#FFFFFF",
+					
+					//a to b loop
+					
+					useAToB:"yes",
+					atbTimeBackgroundColor:"transparent",
+					atbTimeTextColorNormal:"#888888",
+					atbTimeTextColorSelected:"#FFFFFF",
+					atbButtonTextNormalColor:"#888888",
+					atbButtonTextSelectedColor:"#FFFFFF",
+					atbButtonBackgroundNormalColor:"#FFFFFF",
+					atbButtonBackgroundSelectedColor:"#000000",
+					
+					//thumbnails preview
+					
+					thumbnailsPreviewWidth:196,
+					thumbnailsPreviewHeight:110,
+					thumbnailsPreviewBackgroundColor:"#000000",
+					thumbnailsPreviewBorderColor:"#666",
+					thumbnailsPreviewLabelBackgroundColor:"#666",
+					thumbnailsPreviewLabelFontColor:"#FFF",
+					
+					// context menu
+					
+					showContextmenu:'no',					<!-- Klik kanan -->
+					showScriptDeveloper:"no",
+					contextMenuBackgroundColor:"#1f1f1f",
+					contextMenuBorderColor:"#1f1f1f",
+					contextMenuSpacerColor:"#333",
+					contextMenuItemNormalColor:"#666666",
+					contextMenuItemSelectedColor:"#FFFFFF",
+					contextMenuItemDisabledColor:"#333"
+				});
+			});
+			
+		</script>
+		
+	</head>
+
+	<body style="background-color:#999999">	
+	
+		<div id="myDiv" style="position:relative; left:0px; top:0px;"></div>
+		
+		<!--  Playlists -->
+			<ul id="playlists" style="display:none;">
+				<li data-source="playlist1" data-playlist-name="MY RealTv" data-thumbnail-path="content/thumbnails/p-html.jpg">
+					<p class="fwduvp-categories-title"><span class="fwduvp-header">Title: </span><span class="fwduvp-title">My HTML playlist</span></p>
+					<p class="fwduvp-categories-type"><span class="fwduvp-header">Type: </span>HTML</p>
+					<p class="fwduvp-categories-description"><span class="fwduvp-header">Description: </span>Created using <strong>HTML markup</strong>, all format are supported and it can have mixed video formats.</p>
+				</li>
+			</ul>
+			
+
+			<!-- Playlist MY RealTv -->
+			<ul id="playlist1" style="display:none;">
+
+<!----  Ivan  --------------------------------------------------------------------------------->
+<!----  Movies Actor Steven Seagal  --------------------------------------------------------------------------------->
+				<!----  A Dangerous Man --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Steven Seagal/A Dangerous Man/adangerousman-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/A Dangerous Man/videos/adangerousman-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Steven Seagal/A Dangerous Man/videos/adangerousman-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Steven Seagal/A Dangerous Man/videos/adangerousman-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Steven Seagal/A Dangerous Man/videos/adangerousman-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Steven Seagal/A Dangerous Man/adangerousman-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/A Dangerous Man/adangerousman.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">A Dangerous Man</p>
+							<p class="fwduvp-thumbnail-description">A Dangerous Man computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Above the Law --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Steven Seagal/Above the Law/abovethelaw-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/Above the Law/videos/abovethelaw-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Steven Seagal/Above the Law/videos/abovethelaw-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Steven Seagal/Above the Law/videos/abovethelaw-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Steven Seagal/Above the Law/videos/abovethelaw-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Steven Seagal/Above the Law/abovethelaw-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/Above the Law/abovethelaw.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Above the Law</p>
+							<p class="fwduvp-thumbnail-description">Above the Law computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Absolution --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Steven Seagal/Absolution/absolution-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/Absolution/videos/absolution-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Steven Seagal/Absolution/videos/absolution-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Steven Seagal/Absolution/videos/absolution-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Steven Seagal/Absolution/videos/absolution-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Steven Seagal/Absolution/absolution-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/Absolution/absolution.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Absolution</p>
+							<p class="fwduvp-thumbnail-description">Absolution computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Belly of the Beast --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Steven Seagal/Belly of the Beast/bellyofthebeast-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/Belly of the Beast/videos/bellyofthebeast-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Steven Seagal/Belly of the Beast/videos/bellyofthebeast-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Steven Seagal/Belly of the Beast/videos/bellyofthebeast-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Steven Seagal/Belly of the Beast/videos/bellyofthebeast-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Steven Seagal/Belly of the Beast/bellyofthebeast-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/Belly of the Beast/bellyofthebeast.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Belly of the Beast</p>
+							<p class="fwduvp-thumbnail-description">Belly of the Beast computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Contract to Kill --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Steven Seagal/Contract to Kill/contracttokill-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/Contract to Kill/videos/contracttokill-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Steven Seagal/Contract to Kill/videos/contracttokill-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Steven Seagal/Contract to Kill/videos/contracttokill-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Steven Seagal/Contract to Kill/videos/contracttokill-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Steven Seagal/Contract to Kill/contracttokill-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/Contract to Kill/contracttokill.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Contract to Kill</p>
+							<p class="fwduvp-thumbnail-description">Contract to Kill computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Driven To Kill --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Steven Seagal/Driven To Kill/driventokill-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/Driven To Kill/videos/driventokill-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Steven Seagal/Driven To Kill/videos/driventokill-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Steven Seagal/Driven To Kill/videos/driventokill-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Steven Seagal/Driven To Kill/videos/driventokill-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Steven Seagal/Driven To Kill/driventokill-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/Driven To Kill/driventokill.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Driven To Kill</p>
+							<p class="fwduvp-thumbnail-description">Driven To Kill computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  End of a Gun --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Steven Seagal/End of a Gun/endofagun-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/End of a Gun/videos/endofagun-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Steven Seagal/End of a Gun/videos/endofagun-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Steven Seagal/End of a Gun/videos/endofagun-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Steven Seagal/End of a Gun/videos/endofagun-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Steven Seagal/End of a Gun/endofagun-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/End of a Gun/endofagun.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">End of a Gun</p>
+							<p class="fwduvp-thumbnail-description">End of a Gun computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Executive Decision --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Steven Seagal/Executive Decision/executivedecision-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/Executive Decision/videos/executivedecision-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Steven Seagal/Executive Decision/videos/executivedecision-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Steven Seagal/Executive Decision/videos/executivedecision-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Steven Seagal/Executive Decision/videos/executivedecision-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Steven Seagal/Executive Decision/executivedecision-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/Executive Decision/executivedecision.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Executive Decision</p>
+							<p class="fwduvp-thumbnail-description">Executive Decision computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Exit Wounds --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Steven Seagal/Exit Wounds/exitwounds-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/Exit Wounds/videos/exitwounds-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Steven Seagal/Exit Wounds/videos/exitwounds-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Steven Seagal/Exit Wounds/videos/exitwounds-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Steven Seagal/Exit Wounds/videos/exitwounds-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Steven Seagal/Exit Wounds/exitwounds-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/Exit Wounds/exitwounds.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Exit Wounds</p>
+							<p class="fwduvp-thumbnail-description">Exit Wounds computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Force of Execution --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Steven Seagal/Force of Execution/forceofexecution-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/Force of Execution/videos/forceofexecution-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Steven Seagal/Force of Execution/videos/forceofexecution-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Steven Seagal/Force of Execution/videos/forceofexecution-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Steven Seagal/Force of Execution/videos/forceofexecution-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Steven Seagal/Force of Execution/forceofexecution-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/Force of Execution/forceofexecution.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Force of Execution</p>
+							<p class="fwduvp-thumbnail-description">Force of Execution computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Hard to Kill --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Steven Seagal/Hard to Kill/hardtokill-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/Hard to Kill/videos/hardtokill-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Steven Seagal/Hard to Kill/videos/hardtokill-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Steven Seagal/Hard to Kill/videos/hardtokill-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Steven Seagal/Hard to Kill/videos/hardtokill-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Steven Seagal/Hard to Kill/hardtokill-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/Hard to Kill/hardtokill.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Hard to Kill</p>
+							<p class="fwduvp-thumbnail-description">Hard to Kill computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Into the Sun --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Steven Seagal/Into the Sun/intothesun-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/Into the Sun/videos/intothesun-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Steven Seagal/Into the Sun/videos/intothesun-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Steven Seagal/Into the Sun/videos/intothesun-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Steven Seagal/Into the Sun/videos/intothesun-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Steven Seagal/Into the Sun/intothesun-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/Into the Sun/intothesun.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Into the Sun</p>
+							<p class="fwduvp-thumbnail-description">Into the Sun computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Kill Switch --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Steven Seagal/Kill Switch/killswitch-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/Kill Switch/videos/killswitch-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Steven Seagal/Kill Switch/videos/killswitch-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Steven Seagal/Kill Switch/videos/killswitch-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Steven Seagal/Kill Switch/videos/killswitch-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Steven Seagal/Kill Switch/killswitch-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/Kill Switch/killswitch.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Kill Switch</p>
+							<p class="fwduvp-thumbnail-description">Kill Switch computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Marked for Death --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Steven Seagal/Marked for Death/markedfordeath-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/Marked for Death/videos/markedfordeath-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Steven Seagal/Marked for Death/videos/markedfordeath-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Steven Seagal/Marked for Death/videos/markedfordeath-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Steven Seagal/Marked for Death/videos/markedfordeath-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Steven Seagal/Marked for Death/markedfordeath-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/Marked for Death/markedfordeath.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Marked for Death</p>
+							<p class="fwduvp-thumbnail-description">Marked for Death computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Maximum Conviction --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Steven Seagal/Maximum Conviction/maximumconviction-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/Maximum Conviction/videos/maximumconviction-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Steven Seagal/Maximum Conviction/videos/maximumconviction-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Steven Seagal/Maximum Conviction/videos/maximumconviction-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Steven Seagal/Maximum Conviction/videos/maximumconviction-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Steven Seagal/Maximum Conviction/maximumconviction-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/Maximum Conviction/maximumconviction.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Maximum Conviction</p>
+							<p class="fwduvp-thumbnail-description">Maximum Conviction computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Out for a Kill --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Steven Seagal/Out for a Kill/outforakill-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/Out for a Kill/videos/outforakill-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Steven Seagal/Out for a Kill/videos/outforakill-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Steven Seagal/Out for a Kill/videos/outforakill-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Steven Seagal/Out for a Kill/videos/outforakill-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Steven Seagal/Out for a Kill/outforakill-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/Out for a Kill/outforakill.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Out for a Kill</p>
+							<p class="fwduvp-thumbnail-description">Out for a Kill computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Out for Justice --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Steven Seagal/Out for Justice/outforjustice-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/Out for Justice/videos/outforjustice-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Steven Seagal/Out for Justice/videos/outforjustice-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Steven Seagal/Out for Justice/videos/outforjustice-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Steven Seagal/Out for Justice/videos/outforjustice-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Steven Seagal/Out for Justice/outforjustice-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/Out for Justice/outforjustice.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Out for Justice</p>
+							<p class="fwduvp-thumbnail-description">Out for Justice computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Pistol Whipped --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Steven Seagal/Pistol Whipped/pistolwhipped-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/Pistol Whipped/videos/pistolwhipped-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Steven Seagal/Pistol Whipped/videos/pistolwhipped-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Steven Seagal/Pistol Whipped/videos/pistolwhipped-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Steven Seagal/Pistol Whipped/videos/pistolwhipped-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Steven Seagal/Pistol Whipped/pistolwhipped-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/Pistol Whipped/pistolwhipped.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Pistol Whipped</p>
+							<p class="fwduvp-thumbnail-description">Pistol Whipped computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Submerged --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Steven Seagal/Submerged/submerged-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/Submerged/videos/submerged-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Steven Seagal/Submerged/videos/submerged-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Steven Seagal/Submerged/videos/submerged-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Steven Seagal/Submerged/videos/submerged-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Steven Seagal/Submerged/submerged-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/Submerged/submerged.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Submerged</p>
+							<p class="fwduvp-thumbnail-description">Submerged computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  The Foreigner --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Steven Seagal/The Foreigner/theforeigner-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/The Foreigner/videos/theforeigner-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Steven Seagal/The Foreigner/videos/theforeigner-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Steven Seagal/The Foreigner/videos/theforeigner-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Steven Seagal/The Foreigner/videos/theforeigner-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Steven Seagal/The Foreigner/theforeigner-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/The Foreigner/theforeigner.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">The Foreigner</p>
+							<p class="fwduvp-thumbnail-description">The Foreigner computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  The Glimmer Man --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Steven Seagal/The Glimmer Man/theglimmerman-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/The Glimmer Man/videos/theglimmerman-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Steven Seagal/The Glimmer Man/videos/theglimmerman-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Steven Seagal/The Glimmer Man/videos/theglimmerman-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Steven Seagal/The Glimmer Man/videos/theglimmerman-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Steven Seagal/The Glimmer Man/theglimmerman-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/The Glimmer Man/theglimmerman.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">The Glimmer Man</p>
+							<p class="fwduvp-thumbnail-description">The Glimmer Man computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Under Siege --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Steven Seagal/Under Siege/undersiege-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/Under Siege/videos/undersiege-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Steven Seagal/Under Siege/videos/undersiege-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Steven Seagal/Under Siege/videos/undersiege-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Steven Seagal/Under Siege/videos/undersiege-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Steven Seagal/Under Siege/undersiege-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/Under Siege/undersiege.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Under Siege</p>
+							<p class="fwduvp-thumbnail-description">Under Siege computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!----  Under Siege 2 Dark Territory --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Movies Aktor/Steven Seagal/Under Siege 2 Dark Territory/undersiege2-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/Under Siege 2 Dark Territory/videos/undersiege2-240p.mp4', label:'small version'}, {source:'content/realtv/Movies Aktor/Steven Seagal/Under Siege 2 Dark Territory/videos/undersiege2-360p.mp4', label:'sd360'},{source:'content/realtv/Movies Aktor/Steven Seagal/Under Siege 2 Dark Territory/videos/undersiege2-480p.mp4', label:'hd480'},{source:'content/realtv/Movies Aktor/Steven Seagal/Under Siege 2 Dark Territory/videos/undersiege2-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Movies Aktor/Steven Seagal/Under Siege 2 Dark Territory/undersiege2-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Movies Aktor/Steven Seagal/Under Siege 2 Dark Territory/undersiege2.srt', label:'Indonesia'}, {source:'content/subtitles/romanian_subtitle.vtt', label:'Romanian'},{source:'content/subtitles/spanish_subtitle.vtt', label:'Spanish'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">	
+				
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Under Siege 2 Dark Territory</p>
+							<p class="fwduvp-thumbnail-description">Under Siege 2 Dark Territory computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+<!---- END --------------------------------------------------------------------------------->
+				
+			</ul>		
+	</body>
+</html>
+
+
+
+
+
