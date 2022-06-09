@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>RealTv</title>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1 user-scalable=no" />
+		
+		<link rel="stylesheet" type="text/css"  href="content/global.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+		
+		<script type="text/javascript" src="java/FWDUVPlayer.js"></script>
+		
+		<!-- Setup video player-->
+		<script type="text/javascript">
+			FWDUVPUtils.onReady(function(){
+				
+				new FWDUVPlayer({	
+					
+					//main settings
+					
+					instanceName:"player1",
+					parentId:"myDiv",
+					playlistsId:"playlists",
+					mainFolderPath:"content",
+					skinPath:"classic_skin_dark",
+					displayType:"responsive",
+					initializeOnlyWhenVisible:"no",
+					useVectorIcons:"no",
+					fillEntireVideoScreen:"no",
+					fillEntireposterScreen:"yes",
+					goFullScreenOnButtonPlay:"no",
+					playsinline:"yes",
+					privateVideoPassword:"428c841430ea18a70f7b06525d4b748a",
+					youtubeAPIKey:"",
+					useHEXColorsForSkin:"no",
+					normalHEXButtonsColor:"#666666",
+					googleAnalyticsTrackingCode:"",
+					useResumeOnPlay:"no",
+					useDeepLinking:"yes",
+					showPreloader:"yes",
+					preloaderBackgroundColor:"#000000",
+					preloaderFillColor:"#FFFFFF",
+					addKeyboardSupport:"yes",
+					autoScale:"yes",
+					showButtonsToolTip:"yes", 
+					stopVideoWhenPlayComplete:"no",
+					playAfterVideoStop:"no",
+					autoPlay:"no",
+					autoPlayText:"Click To Unmute",
+					loop:"no",
+					shuffle:"no",
+					showErrorInfo:"yes",
+					maxWidth:980,
+					maxHeight:552,
+					volume:.8,
+					rewindTime:10,
+					buttonsToolTipHideDelay:1.5,
+					backgroundColor:"#000000",
+					videoBackgroundColor:"#000000",
+					posterBackgroundColor:"#000000",
+					buttonsToolTipFontColor:"#5a5a5a",
+					
+					//logo settings
+					
+					showLogo:"yes",
+					logoPath:"content/logo.png",
+					hideLogoWithController:"yes",
+					logoPosition:"topRight",
+					logoLink:"https://realtv.id/",
+					logoPath:"content/logo.png",
+					logoMargins:10,
+					
+					//playlists/categories settings
+					
+					showPlaylistsSearchInput:"yes",
+					usePlaylistsSelectBox:"yes",
+					showPlaylistsButtonAndPlaylists:"yes",
+					showPlaylistsByDefault:"no",
+					thumbnailSelectedType:"opacity",
+					startAtPlaylist:0,
+					buttonsMargins:15,
+					thumbnailMaxWidth:350, 
+					thumbnailMaxHeight:350,
+					horizontalSpaceBetweenThumbnails:40,
+					verticalSpaceBetweenThumbnails:40,
+					inputBackgroundColor:"#333333",
+					inputColor:"#999999",
+					
+					//playlist settings
+					
+					showPlaylistButtonAndPlaylist:"yes",					<!-- Tombol Playlist -->
+					playlistPosition:"right",
+					showPlaylistByDefault:"yes",
+					showPlaylistName:"yes",
+					showSearchInput:"yes",
+					showLoopButton:"yes",
+					showShuffleButton:"yes",
+					showPlaylistOnFullScreen:"no",
+					showNextAndPrevButtons:"yes",
+					showThumbnail:"yes",
+					showOnlyThumbnail:"no",
+					forceDisableDownloadButtonForFolder:"yes",
+					addMouseWheelSupport:"yes", 
+					startAtRandomVideo:"no",
+					stopAfterLastVideoHasPlayed:"no",
+					addScrollOnMouseMove:"no",
+					randomizePlaylist:'no',
+					folderVideoLabel:"VIDEO ",
+					playlistRightWidth:310,
+					playlistBottomHeight:380,
+					startAtVideo:0,
+					maxPlaylistItems:1000,									<!-- Jumlah Playlist -->
+					thumbnailWidth:71,
+					thumbnailHeight:71,
+					spaceBetweenControllerAndPlaylist:1,
+					spaceBetweenThumbnails:1,
+					scrollbarOffestWidth:10,
+					scollbarSpeedSensitivity:.5,
+					playlistBackgroundColor:"#000000",
+					playlistNameColor:"#FFFFFF",
+					thumbnailNormalBackgroundColor:"#1b1b1b",
+					thumbnailHoverBackgroundColor:"#313131",
+					thumbnailDisabledBackgroundColor:"#272727",
+					searchInputBackgroundColor:"#000000",
+					searchInputColor:"#bdbdbd",
+					youtubeAndFolderVideoTitleColor:"#FFFFFF",
+					folderAudioSecondTitleColor:"#999999",
+					youtubeOwnerColor:"#bdbdbd",
+					youtubeDescriptionColor:"#bdbdbd",
+					mainSelectorBackgroundSelectedColor:"#FFFFFF",
+					mainSelectorTextNormalColor:"#FFFFFF",
+					mainSelectorTextSelectedColor:"#000000",
+					mainButtonBackgroundNormalColor:"#212021",
+					mainButtonBackgroundSelectedColor:"#FFFFFF",
+					mainButtonTextNormalColor:"#FFFFFF",
+					mainButtonTextSelectedColor:"#000000",
+					
+					//controller settings
+					
+					showController:"yes",					<!-- Tampilan Pengaturan -->
+					showControllerWhenVideoIsStopped:"yes",
+					showNextAndPrevButtonsInController:"no",
+					showRewindButton:"no",					<!-- Playback -->					
+					showPlaybackRateButton:"yes",
+					showVolumeButton:"yes",
+					showTime:"yes",
+					showQualityButton:"yes",
+					showInfoButton:"yes",					<!-- Info -->
+					showDownloadButton:"no",				<!-- Download -->
+					showShareButton:"no",					<!-- Bagikan -->
+					showEmbedButton:"yes",					<!-- Iframe -->
+					showChromecastButton:"no",
+					showFullScreenButton:"yes",
+					disableVideoScrubber:"no",
+					showScrubberWhenControllerIsHidden:"yes",
+					showMainScrubberToolTipLabel:"yes",
+					showDefaultControllerForVimeo:"yes",
+					repeatBackground:"no",
+					controllerHeight:42,
+					controllerHideDelay:3,
+					startSpaceBetweenButtons:10,
+					spaceBetweenButtons:10,
+					scrubbersOffsetWidth:2,
+					mainScrubberOffestTop:16,
+					timeOffsetLeftWidth:2,
+					timeOffsetRightWidth:3,
+					timeOffsetTop:0,
+					volumeScrubberHeight:80,
+					volumeScrubberOfsetHeight:12,
+					timeColor:"#bdbdbd",
+					youtubeQualityButtonNormalColor:"#bdbdbd",
+					youtubeQualityButtonSelectedColor:"#FFFFFF",
+					scrubbersToolTipLabelBackgroundColor:"#FFFFFF",
+					scrubbersToolTipLabelFontColor:"#5a5a5a",
+					
+					//advertisement on pause window
+					
+					aopwTitle:"Advertisement",
+					aopwWidth:400,
+					aopwHeight:240,
+					aopwBorderSize:6,
+					aopwTitleColor:"#FFFFFF",
+					
+					//subtitle
+					
+					subtitlesOffLabel:"Subtitle off",
+					//popup add windows
+					showPopupAdsCloseButton:"yes",
+					
+					//embed window and info window
+					
+					embedAndInfoWindowCloseButtonMargins:15,
+					borderColor:"#333333",
+					mainLabelsColor:"#FFFFFF",
+					secondaryLabelsColor:"#bdbdbd",
+					shareAndEmbedTextColor:"#5a5a5a",
+					inputBackgroundColor:"#000000",
+					inputColor:"#FFFFFF",
+					
+					//login
+					
+		            playIfLoggedIn:"no",
+		            playIfLoggedInMessage:"Please <a href='https://google.com' target='_blank'>login</a> to play this video.",
+					
+					//audio visualizer
+					
+					audioVisualizerLinesColor:"#0099FF",
+					audioVisualizerCircleColor:"#FFFFFF",
+					
+					//lightbox settings
+					
+					closeLightBoxWhenPlayComplete:"no",
+					lightBoxBackgroundOpacity:.6,
+					lightBoxBackgroundColor:"#000000",
+					
+					//sticky on scroll
+					
+					stickyOnScroll:"no",
+					stickyOnScrollShowOpener:"yes",
+					stickyOnScrollWidth:"700",
+					stickyOnScrollHeight:"394",
+					
+					//sticky display settings
+					
+					showOpener:"yes",
+					showOpenerPlayPauseButton:"yes",
+					verticalPosition:"bottom",
+					horizontalPosition:"center",
+					showPlayerByDefault:"yes",
+					animatePlayer:"yes",
+					openerAlignment:"right",
+					mainBackgroundImagePath:"content/minimal_skin_dark/main-background.png",
+					openerEqulizerOffsetTop:-1,
+					openerEqulizerOffsetLeft:3,
+					offsetX:0,
+					offsetY:0,
+					
+					//playback rate / speed
+					
+					defaultPlaybackRate:1, //0.25, 0.5, 1, 1.25, 1.2, 2
+					
+					//cuepoints
+					
+					executeCuepointsOnlyOnce:"no",
+					
+					//annotations
+					
+					showAnnotationsPositionTool:"no",
+					
+					//ads
+					
+					openNewPageAtTheEndOfTheAds:"no",
+					adsButtonsPosition:"left",
+					skipToVideoText:"You can skip to video in: ",
+					skipToVideoButtonText:"Skip Ad",
+					adsTextNormalColor:"#bdbdbd",
+					adsTextSelectedColor:"#FFFFFF",
+					adsBorderNormalColor:"#444444",
+					adsBorderSelectedColor:"#FFFFFF",
+					
+					//a to b loop
+					
+					useAToB:"yes",
+					atbTimeBackgroundColor:"transparent",
+					atbTimeTextColorNormal:"#888888",
+					atbTimeTextColorSelected:"#FFFFFF",
+					atbButtonTextNormalColor:"#888888",
+					atbButtonTextSelectedColor:"#FFFFFF",
+					atbButtonBackgroundNormalColor:"#FFFFFF",
+					atbButtonBackgroundSelectedColor:"#000000",
+					
+					//thumbnails preview
+					
+					thumbnailsPreviewWidth:196,
+					thumbnailsPreviewHeight:110,
+					thumbnailsPreviewBackgroundColor:"#000000",
+					thumbnailsPreviewBorderColor:"#666",
+					thumbnailsPreviewLabelBackgroundColor:"#666",
+					thumbnailsPreviewLabelFontColor:"#FFF",
+					
+					// context menu
+					
+					showContextmenu:'no',					<!-- Klik kanan -->
+					showScriptDeveloper:"no",
+					contextMenuBackgroundColor:"#1f1f1f",
+					contextMenuBorderColor:"#1f1f1f",
+					contextMenuSpacerColor:"#333",
+					contextMenuItemNormalColor:"#666666",
+					contextMenuItemSelectedColor:"#FFFFFF",
+					contextMenuItemDisabledColor:"#333"
+				});
+			});
+			
+		</script>
+		
+	</head>
+
+	<body style="background-color:#999999">	
+	
+		<div id="myDiv" style="position:relative; left:0px; top:0px;"></div>
+		
+		<!--  Playlists -->
+			<ul id="playlists" style="display:none;">
+				<li data-source="playlist1" data-playlist-name="MY RealTv" data-thumbnail-path="content/thumbnails/p-html.jpg">
+					<p class="fwduvp-categories-title"><span class="fwduvp-header">Title: </span><span class="fwduvp-title">My HTML playlist</span></p>
+					<p class="fwduvp-categories-type"><span class="fwduvp-header">Type: </span>HTML</p>
+					<p class="fwduvp-categories-description"><span class="fwduvp-header">Description: </span>Created using <strong>HTML markup</strong>, all format are supported and it can have mixed video formats.</p>
+				</li>
+			</ul>
+			
+
+			<!-- Playlist MY RealTv -->
+			<ul id="playlist1" style="display:none;">
+				
+<!---- Film Samurai --------------------------------------------------------------------------------->
+				<!---- 13Assassins --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Film Samurai/13Assassins/13Assassins-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Film Samurai/13Assassins/videos/13Assassins-240p.mp4', label:'small version'}, {source:'content/realtv/Film Samurai/13Assassins/videos/13Assassins-360p.mp4', label:'sd360'}, {source:'content/realtv/Film Samurai/13Assassins/videos/13Assassins-480p.mp4', label:'hd480'},{source:'content/realtv/Film Samurai/13Assassins/videos/13Assassins-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Film Samurai/13Assassins/13Assassins-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Film Samurai/13Assassins/13Assassins.srt', label:'Indonesia'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">
+
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">13Assassins</p>
+							<p class="fwduvp-thumbnail-description">13Assassins computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+                <!---- Blade of the Immortal --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Film Samurai/Blade of the Immortal/Blade of the Immortal-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Film Samurai/Blade of the Immortal/videos/Blade of the Immortal-240p.mp4', label:'small version'}, {source:'content/realtv/Film Samurai/Blade of the Immortal/videos/Blade of the Immortal-360p.mp4', label:'sd360'}, {source:'content/realtv/Film Samurai/Blade of the Immortal/videos/Blade of the Immortal-480p.mp4', label:'hd480'},{source:'content/realtv/Film Samurai/Blade of the Immortal/videos/Blade of the Immortal-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Film Samurai/Blade of the Immortal/Blade of the Immortal-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Film Samurai/Blade of the Immortal/Blade of the Immortal.srt', label:'Indonesia'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">
+
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Blade of the Immortal</p>
+							<p class="fwduvp-thumbnail-description">Blade of the Immortal computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!---- Harakiri (Seppuku) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Film Samurai/Harakiri (Seppuku)/Harakiri (Seppuku)-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Film Samurai/Harakiri (Seppuku)/videos/Harakiri (Seppuku)-240p.mp4', label:'small version'}, {source:'content/realtv/Film Samurai/Harakiri (Seppuku)/videos/Harakiri (Seppuku)-360p.mp4', label:'sd360'}, {source:'content/realtv/Film Samurai/Harakiri (Seppuku)/videos/Harakiri (Seppuku)-480p.mp4', label:'hd480'},{source:'content/realtv/Film Samurai/Harakiri (Seppuku)/videos/Harakiri (Seppuku)-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Film Samurai/Harakiri (Seppuku)/Harakiri (Seppuku)-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Film Samurai/Harakiri (Seppuku)/Harakiri (Seppuku).srt', label:'Indonesia'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">
+
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Harakiri (Seppuku)</p>
+							<p class="fwduvp-thumbnail-description">Harakiri (Seppuku) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!---- Ichimei (Hara-Kiri Death of a Samurai) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Film Samurai/Ichimei (Hara-Kiri Death of a Samurai)/Ichimei (Hara-Kiri Death of a Samurai)-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Film Samurai/Ichimei (Hara-Kiri Death of a Samurai)/videos/Ichimei (Hara-Kiri Death of a Samurai)-240p.mp4', label:'small version'}, {source:'content/realtv/Film Samurai/Ichimei (Hara-Kiri Death of a Samurai)/videos/Ichimei (Hara-Kiri Death of a Samurai)-360p.mp4', label:'sd360'}, {source:'content/realtv/Film Samurai/Ichimei (Hara-Kiri Death of a Samurai)/videos/Ichimei (Hara-Kiri Death of a Samurai)-480p.mp4', label:'hd480'},{source:'content/realtv/Film Samurai/Ichimei (Hara-Kiri Death of a Samurai)/videos/Ichimei (Hara-Kiri Death of a Samurai)-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Film Samurai/Ichimei (Hara-Kiri Death of a Samurai)/Ichimei (Hara-Kiri Death of a Samurai)-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Film Samurai/Ichimei (Hara-Kiri Death of a Samurai)/Ichimei (Hara-Kiri Death of a Samurai).srt', label:'Indonesia'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">
+
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Ichimei (Hara-Kiri Death of a Samurai)</p>
+							<p class="fwduvp-thumbnail-description">Ichimei (Hara-Kiri Death of a Samurai) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!---- Ikiru --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Film Samurai/Ikiru/Ikiru-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Film Samurai/Ikiru/videos/Ikiru-240p.mp4', label:'small version'}, {source:'content/realtv/Film Samurai/Ikiru/videos/Ikiru-360p.mp4', label:'sd360'}, {source:'content/realtv/Film Samurai/Ikiru/videos/Ikiru-480p.mp4', label:'hd480'},{source:'content/realtv/Film Samurai/Ikiru/videos/Ikiru-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Film Samurai/Ikiru/Ikiru-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Film Samurai/Ikiru/Ikiru.srt', label:'Indonesia'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">
+
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Ikiru</p>
+							<p class="fwduvp-thumbnail-description">Ikiru computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!---- Legend of the Eight Samurai (Satomi hakken-den) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Film Samurai/Legend of the Eight Samurai (Satomi hakken-den)/Legend of the Eight Samurai (Satomi hakken-den)-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Film Samurai/Legend of the Eight Samurai (Satomi hakken-den)/videos/Legend of the Eight Samurai (Satomi hakken-den)-240p.mp4', label:'small version'}, {source:'content/realtv/Film Samurai/Legend of the Eight Samurai (Satomi hakken-den)/videos/Legend of the Eight Samurai (Satomi hakken-den)-360p.mp4', label:'sd360'}, {source:'content/realtv/Film Samurai/Legend of the Eight Samurai (Satomi hakken-den)/videos/Legend of the Eight Samurai (Satomi hakken-den)-480p.mp4', label:'hd480'},{source:'content/realtv/Film Samurai/Legend of the Eight Samurai (Satomi hakken-den)/videos/Legend of the Eight Samurai (Satomi hakken-den)-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Film Samurai/Legend of the Eight Samurai (Satomi hakken-den)/Legend of the Eight Samurai (Satomi hakken-den)-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Film Samurai/Legend of the Eight Samurai (Satomi hakken-den)/Legend of the Eight Samurai (Satomi hakken-den).srt', label:'Indonesia'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">
+
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Legend of the Eight Samurai (Satomi hakken-den)</p>
+							<p class="fwduvp-thumbnail-description">Legend of the Eight Samurai (Satomi hakken-den) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!---- Oba The Last Samurai --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Film Samurai/Oba The Last Samurai/Oba The Last Samurai-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Film Samurai/Oba The Last Samurai/videos/Oba The Last Samurai-240p.mp4', label:'small version'}, {source:'content/realtv/Film Samurai/Oba The Last Samurai/videos/Oba The Last Samurai-360p.mp4', label:'sd360'}, {source:'content/realtv/Film Samurai/Oba The Last Samurai/videos/Oba The Last Samurai-480p.mp4', label:'hd480'},{source:'content/realtv/Film Samurai/Oba The Last Samurai/videos/Oba The Last Samurai-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Film Samurai/Oba The Last Samurai/Oba The Last Samurai-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Film Samurai/Oba The Last Samurai/Oba The Last Samurai.srt', label:'Indonesia'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">
+
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Oba The Last Samurai</p>
+							<p class="fwduvp-thumbnail-description">Oba The Last Samurai computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!---- Ran --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Film Samurai/Ran/Ran-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Film Samurai/Ran/videos/Ran-240p.mp4', label:'small version'}, {source:'content/realtv/Film Samurai/Ran/videos/Ran-360p.mp4', label:'sd360'}, {source:'content/realtv/Film Samurai/Ran/videos/Ran-480p.mp4', label:'hd480'},{source:'content/realtv/Film Samurai/Ran/videos/Ran-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Film Samurai/Ran/Ran-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Film Samurai/Ran/Ran.srt', label:'Indonesia'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">
+
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Ran</p>
+							<p class="fwduvp-thumbnail-description">Ran computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!---- Return of the One-Armed Swordsman (Du bei dao wang) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Film Samurai/Return of the One-Armed Swordsman (Du bei dao wang)/Return of the One-Armed Swordsman (Du bei dao wang)-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Film Samurai/Return of the One-Armed Swordsman (Du bei dao wang)/videos/Return of the One-Armed Swordsman (Du bei dao wang)-240p.mp4', label:'small version'}, {source:'content/realtv/Film Samurai/Return of the One-Armed Swordsman (Du bei dao wang)/videos/Return of the One-Armed Swordsman (Du bei dao wang)-360p.mp4', label:'sd360'}, {source:'content/realtv/Film Samurai/Return of the One-Armed Swordsman (Du bei dao wang)/videos/Return of the One-Armed Swordsman (Du bei dao wang)-480p.mp4', label:'hd480'},{source:'content/realtv/Film Samurai/Return of the One-Armed Swordsman (Du bei dao wang)/videos/Return of the One-Armed Swordsman (Du bei dao wang)-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Film Samurai/Return of the One-Armed Swordsman (Du bei dao wang)/Return of the One-Armed Swordsman (Du bei dao wang)-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Film Samurai/Return of the One-Armed Swordsman (Du bei dao wang)/Return of the One-Armed Swordsman (Du bei dao wang).srt', label:'Indonesia'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">
+
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Return of the One-Armed Swordsman (Du bei dao wang)</p>
+							<p class="fwduvp-thumbnail-description">Return of the One-Armed Swordsman (Du bei dao wang) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!---- Rurouni Kenshin --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Film Samurai/Rurouni Kenshin/Rurouni Kenshin-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Film Samurai/Rurouni Kenshin/videos/Rurouni Kenshin-240p.mp4', label:'small version'}, {source:'content/realtv/Film Samurai/Rurouni Kenshin/videos/Rurouni Kenshin-360p.mp4', label:'sd360'}, {source:'content/realtv/Film Samurai/Rurouni Kenshin/videos/Rurouni Kenshin-480p.mp4', label:'hd480'},{source:'content/realtv/Film Samurai/Rurouni Kenshin/videos/Rurouni Kenshin-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Film Samurai/Rurouni Kenshin/Rurouni Kenshin-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Film Samurai/Rurouni Kenshin/Rurouni Kenshin.srt', label:'Indonesia'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">
+
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Rurouni Kenshin</p>
+							<p class="fwduvp-thumbnail-description">Rurouni Kenshin computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!---- Rurouni Kenshin Kyoto Inferno --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Film Samurai/Rurouni Kenshin Kyoto Inferno/Rurouni Kenshin Kyoto Inferno-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Film Samurai/Rurouni Kenshin Kyoto Inferno/videos/Rurouni Kenshin Kyoto Inferno-240p.mp4', label:'small version'}, {source:'content/realtv/Film Samurai/Rurouni Kenshin Kyoto Inferno/videos/Rurouni Kenshin Kyoto Inferno-360p.mp4', label:'sd360'}, {source:'content/realtv/Film Samurai/Rurouni Kenshin Kyoto Inferno/videos/Rurouni Kenshin Kyoto Inferno-480p.mp4', label:'hd480'},{source:'content/realtv/Film Samurai/Rurouni Kenshin Kyoto Inferno/videos/Rurouni Kenshin Kyoto Inferno-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Film Samurai/Rurouni Kenshin Kyoto Inferno/Rurouni Kenshin Kyoto Inferno-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Film Samurai/Rurouni Kenshin Kyoto Inferno/Rurouni Kenshin Kyoto Inferno.srt', label:'Indonesia'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">
+
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Rurouni Kenshin Kyoto Inferno</p>
+							<p class="fwduvp-thumbnail-description">Rurouni Kenshin Kyoto Inferno computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!---- Rurouni Kenshin The Legend Ends --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Film Samurai/Rurouni Kenshin The Legend Ends/Rurouni Kenshin The Legend Ends-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Film Samurai/Rurouni Kenshin The Legend Ends/videos/Rurouni Kenshin The Legend Ends-240p.mp4', label:'small version'}, {source:'content/realtv/Film Samurai/Rurouni Kenshin The Legend Ends/videos/Rurouni Kenshin The Legend Ends-360p.mp4', label:'sd360'}, {source:'content/realtv/Film Samurai/Rurouni Kenshin The Legend Ends/videos/Rurouni Kenshin The Legend Ends-480p.mp4', label:'hd480'},{source:'content/realtv/Film Samurai/Rurouni Kenshin The Legend Ends/videos/Rurouni Kenshin The Legend Ends-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Film Samurai/Rurouni Kenshin The Legend Ends/Rurouni Kenshin The Legend Ends-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Film Samurai/Rurouni Kenshin The Legend Ends/Rurouni Kenshin The Legend Ends.srt', label:'Indonesia'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">
+
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Rurouni Kenshin The Legend Ends</p>
+							<p class="fwduvp-thumbnail-description">Rurouni Kenshin The Legend Ends computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!---- Seven Samurai (Shichinin no samurai) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Film Samurai/Seven Samurai (Shichinin no samurai)/Seven Samurai (Shichinin no samurai)-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Film Samurai/Seven Samurai (Shichinin no samurai)/videos/Seven Samurai (Shichinin no samurai)-240p.mp4', label:'small version'}, {source:'content/realtv/Film Samurai/Seven Samurai (Shichinin no samurai)/videos/Seven Samurai (Shichinin no samurai)-360p.mp4', label:'sd360'}, {source:'content/realtv/Film Samurai/Seven Samurai (Shichinin no samurai)/videos/Seven Samurai (Shichinin no samurai)-480p.mp4', label:'hd480'},{source:'content/realtv/Film Samurai/Seven Samurai (Shichinin no samurai)/videos/Seven Samurai (Shichinin no samurai)-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Film Samurai/Seven Samurai (Shichinin no samurai)/Seven Samurai (Shichinin no samurai)-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Film Samurai/Seven Samurai (Shichinin no samurai)/Seven Samurai (Shichinin no samurai).srt', label:'Indonesia'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">
+
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Seven Samurai (Shichinin no samurai)</p>
+							<p class="fwduvp-thumbnail-description">Seven Samurai (Shichinin no samurai) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!---- The Blind Swordsman- Zatoichi --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Film Samurai/The Blind Swordsman- Zatoichi/The Blind Swordsman- Zatoichi-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Film Samurai/The Blind Swordsman- Zatoichi/videos/The Blind Swordsman- Zatoichi-240p.mp4', label:'small version'}, {source:'content/realtv/Film Samurai/The Blind Swordsman- Zatoichi/videos/The Blind Swordsman- Zatoichi-360p.mp4', label:'sd360'}, {source:'content/realtv/Film Samurai/The Blind Swordsman- Zatoichi/videos/The Blind Swordsman- Zatoichi-480p.mp4', label:'hd480'},{source:'content/realtv/Film Samurai/The Blind Swordsman- Zatoichi/videos/The Blind Swordsman- Zatoichi-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Film Samurai/The Blind Swordsman- Zatoichi/The Blind Swordsman- Zatoichi-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Film Samurai/The Blind Swordsman- Zatoichi/The Blind Swordsman- Zatoichi.srt', label:'Indonesia'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">
+
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">The Blind Swordsman- Zatoichi</p>
+							<p class="fwduvp-thumbnail-description">The Blind Swordsman- Zatoichi computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!---- The Last Samurai --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Film Samurai/The Last Samurai/The Last Samurai-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Film Samurai/The Last Samurai/videos/The Last Samurai-240p.mp4', label:'small version'}, {source:'content/realtv/Film Samurai/The Last Samurai/videos/The Last Samurai-360p.mp4', label:'sd360'}, {source:'content/realtv/Film Samurai/The Last Samurai/videos/The Last Samurai-480p.mp4', label:'hd480'},{source:'content/realtv/Film Samurai/The Last Samurai/videos/The Last Samurai-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Film Samurai/The Last Samurai/The Last Samurai-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Film Samurai/The Last Samurai/The Last Samurai.srt', label:'Indonesia'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">
+
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">The Last Samurai</p>
+							<p class="fwduvp-thumbnail-description">The Last Samurai computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!---- The Twilight Samurai --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Film Samurai/The Twilight Samurai/The Twilight Samurai-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Film Samurai/The Twilight Samurai/videos/The Twilight Samurai-240p.mp4', label:'small version'}, {source:'content/realtv/Film Samurai/The Twilight Samurai/videos/The Twilight Samurai-360p.mp4', label:'sd360'}, {source:'content/realtv/Film Samurai/The Twilight Samurai/videos/The Twilight Samurai-480p.mp4', label:'hd480'},{source:'content/realtv/Film Samurai/The Twilight Samurai/videos/The Twilight Samurai-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Film Samurai/The Twilight Samurai/The Twilight Samurai-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Film Samurai/The Twilight Samurai/The Twilight Samurai.srt', label:'Indonesia'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">
+
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">The Twilight Samurai</p>
+							<p class="fwduvp-thumbnail-description">The Twilight Samurai computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!---- Unforgiven --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Film Samurai/Unforgiven/Unforgiven-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Film Samurai/Unforgiven/videos/Unforgiven-240p.mp4', label:'small version'}, {source:'content/realtv/Film Samurai/Unforgiven/videos/Unforgiven-360p.mp4', label:'sd360'}, {source:'content/realtv/Film Samurai/Unforgiven/videos/Unforgiven-480p.mp4', label:'hd480'},{source:'content/realtv/Film Samurai/Unforgiven/videos/Unforgiven-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Film Samurai/Unforgiven/Unforgiven-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Film Samurai/Unforgiven/Unforgiven.srt', label:'Indonesia'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">
+
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Unforgiven</p>
+							<p class="fwduvp-thumbnail-description">Unforgiven computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!---- When The Last Sword is Drawn (Mibu gishi den) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Film Samurai/When The Last Sword is Drawn (Mibu gishi den)/When The Last Sword is Drawn (Mibu gishi den)-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Film Samurai/When The Last Sword is Drawn (Mibu gishi den)/videos/When The Last Sword is Drawn (Mibu gishi den)-240p.mp4', label:'small version'}, {source:'content/realtv/Film Samurai/When The Last Sword is Drawn (Mibu gishi den)/videos/When The Last Sword is Drawn (Mibu gishi den)-360p.mp4', label:'sd360'}, {source:'content/realtv/Film Samurai/When The Last Sword is Drawn (Mibu gishi den)/videos/When The Last Sword is Drawn (Mibu gishi den)-480p.mp4', label:'hd480'},{source:'content/realtv/Film Samurai/When The Last Sword is Drawn (Mibu gishi den)/videos/When The Last Sword is Drawn (Mibu gishi den)-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Film Samurai/When The Last Sword is Drawn (Mibu gishi den)/When The Last Sword is Drawn (Mibu gishi den)-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Film Samurai/When The Last Sword is Drawn (Mibu gishi den)/When The Last Sword is Drawn (Mibu gishi den).srt', label:'Indonesia'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">
+
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">When The Last Sword is Drawn (Mibu gishi den)</p>
+							<p class="fwduvp-thumbnail-description">When The Last Sword is Drawn (Mibu gishi den) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+				<!---- Yojimbo (The Bodyguard) --------------------------------------------------------------------------------->
+				<li data-thumb-source="content/realtv/Film Samurai/Yojimbo (The Bodyguard)/Yojimbo (The Bodyguard)-thumbnail.png" 
+				data-video-source=	"[{source:'content/realtv/Film Samurai/Yojimbo (The Bodyguard)/videos/Yojimbo (The Bodyguard)-240p.mp4', label:'small version'}, {source:'content/realtv/Film Samurai/Yojimbo (The Bodyguard)/videos/Yojimbo (The Bodyguard)-360p.mp4', label:'sd360'}, {source:'content/realtv/Film Samurai/Yojimbo (The Bodyguard)/videos/Yojimbo (The Bodyguard)-480p.mp4', label:'hd480'},{source:'content/realtv/Film Samurai/Yojimbo (The Bodyguard)/videos/Yojimbo (The Bodyguard)-720p.mp4', label:'hd720'}]" 
+				data-start-at-video=	"1" 
+				data-poster-source=	"content/realtv/Film Samurai/Yojimbo (The Bodyguard)/Yojimbo (The Bodyguard)-poster.png" 
+				data-subtitle-soruce=	"[{source:'content/realtv/Film Samurai/Yojimbo (The Bodyguard)/Yojimbo (The Bodyguard).srt', label:'Indonesia'}]"  
+				data-start-at-subtitle=	"1" 
+				data-downloadable=	"yes">
+
+				<div data-video-short-description="">
+						<div>
+							<p class="fwduvp-thumbnail-title">Yojimbo (The Bodyguard)</p>
+							<p class="fwduvp-thumbnail-description">Yojimbo (The Bodyguard) computer-animated adventure film produced by DreamWorks Animation and Pearl Studio. It is The DreamWorks' 38th film, Pearl Studio's second film, and was written and directed by Jill Culton and co-directed by Todd Wilderman, and stars the voices of Chloe Bennet, Albert Tsai, Tenzing Norgay Trainor, Eddie Izzard, Sarah Paulson, Tsai Chin, and Michelle Wong..</p>
+						</div>
+					</div>
+				</li>
+
+<!---- END --------------------------------------------------------------------------------->
+				
+			</ul>		
+	</body>
+</html>
